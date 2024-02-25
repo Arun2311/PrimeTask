@@ -8,7 +8,7 @@ import Subpage from "./Subpage.jsx";
 export default function BlogPageAll() {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Head />
       <Body />
 

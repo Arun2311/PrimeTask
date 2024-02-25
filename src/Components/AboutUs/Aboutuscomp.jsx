@@ -65,7 +65,7 @@ const Aboutuscomp = () => {
 
   return (
     <div>
-              <Navbar />
+              {/* <Navbar /> */}
 
       <div className="align-Text">
         <h1 className="Body-text">Body</h1>

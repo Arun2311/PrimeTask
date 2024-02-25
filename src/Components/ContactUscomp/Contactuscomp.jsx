@@ -26,7 +26,7 @@ const Contactuscomp = () => {
 
   return (
     <div>
-                    <Navbar />
+                    {/* <Navbar /> */}
 
     <div className="container">
       <div className="left-column">

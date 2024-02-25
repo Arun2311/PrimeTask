@@ -94,7 +94,7 @@ const Body = () => {
 
                 <div className="about">{list.info}</div>
 
-                <div ><h3 className="day">{list.day}</h3></div>
+                <div ><h3 className="day mt-3">{list.day}</h3></div>
               </div>
             </div>
           </div>

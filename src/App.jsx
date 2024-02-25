@@ -9,13 +9,14 @@ import ListComp from "./Components/ListComp/ListComp";
 import Footercomp from "./Components/Footercomp/Footercomp"
 import BlogPageAll from "./Components/Blogpage/index";
 import Subpage from "./Components/Blogpage/Subpage";
+import Navbar from "./Components/NavbarComp/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
       {/* <Pages /> */}
-      <ListComp />
-
+      {/* <ListComp /> */}
+<Navbar/>
       <Routes>
         <Route path="/" element={<Pages />} />
         <Route path="/blog" element={<BlogPageAll/>} />
@@ -25,7 +26,7 @@ function App() {
         <Route path="/blog/blog-subpage" element={<Subpage />} />
 
       </Routes>
-      {/* <Footercomp/> */}
+      <Footercomp/>
     </BrowserRouter>
   );
 }
