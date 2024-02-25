@@ -1,0 +1,33 @@
+
+.video{
+    width: 100%;
+    height:600px;
+    background-image: url("../assets/videoComp.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.video h1{
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 300px;
+
+    font-family:"Proza Libre", sans-serif;
+    font-weight: 10;
+} 
+
+.video i { 
+    font-family:"Proza Libre",sans-serif;
+     color: #FFFFFF;
+}
+
+@media screen and (max-width:720px){
+    
+    .video{
+        width: 780px;
+        height:600px;
+        background-repeat: no-repeat;
+        background-size:cover;
+        
+    }
+}

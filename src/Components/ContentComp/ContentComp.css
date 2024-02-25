@@ -1,0 +1,28 @@
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+}
+.pine{
+  background-color:#FFF0A1;
+
+}
+.pine img{
+  width: 400px;
+  height: 400px;
+}
+.content-base{
+  display: flex;
+  justify-content: space-between;
+  gap:180px;
+  position: relative ;
+  bottom:35px;
+}
+.content-we{
+  position: relative;
+  top:75px;
+  right: 180px;
+}

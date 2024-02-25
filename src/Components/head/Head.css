@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.name {
+  font-family: "Rage Italic", cursive;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 10px;
+  width: 500px;
+}
+
+.secondname {
+  font-family: "Proza Display", sans-serif;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff0a1;
+  text-align: center;
+  height: 500px;
+  margin-top: -110px;
+
+}
+
+
+.para {
+  font-family: "DM Sans", cursive;
+  font-size: 29px;
+  font-weight: 400;
+  width: 600px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    text-align: center;
+    background: #fff0a1;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .name {
+    font-family: "Rage Italic", cursive;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 10px;
+    width: 100%;
+  }
+  .secondname {
+    font-family: "Proza Display", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .para {
+    font-family: "DM Sans", cursive;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        text-align: center;
+        background: #fff0a1;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .name {
+        font-family: "Rage Italic", cursive;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 10px;
+        width: 100%;
+      }
+      .secondname {
+        font-family: "Proza Display", sans-serif;
+        font-size: 35px;
+        font-weight: 600;
+      }
+    
+      .para {
+        font-family: "DM Sans", cursive;
+        font-size: 20px;
+        font-weight: 400;
+        width: 100%;
+      }
+}

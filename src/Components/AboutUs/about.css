@@ -1,0 +1,418 @@
+/* default css */
+
+.align-Text{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+.Body-text{
+    font-size: xx-large;
+}
+.Mind-text{
+    font-size: xx-large;
+}
+.Transform-text{
+    font-size: xx-large;
+    color: #0066CC;
+}
+.Shine-text{
+    font-size: xx-large;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  .text-column {
+    flex: 1;
+    padding: 20px; 
+  }
+  .text-col{
+    align-items: center;
+    display: flex;
+  }
+  .Round-img{
+    float: left;
+  }
+  .The-story{
+    color: #0066CC; 
+    overflow: hidden; 
+    margin-left: 5px; 
+  }
+  .collapse-wrappe{
+    width: 20px;
+    height: 30px;
+  }
+  .image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Float-img{
+    width: 100%;
+    overflow: hidden;
+  }
+  .Img-1{
+    height: 305px;
+    width: 250px;
+    margin-left: 105px;
+  }
+  .Img-2{
+    height: 250px;
+    width: 200px;
+    margin-left: -280px;
+  }
+  .Center-3{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .select-img{
+    height: 400px;
+    width: 550px;
+    margin: auto;
+  }
+ 
+.Transform-class{
+    text-align: center;
+    align-items: center;
+  }
+.span-trans{
+    color: #0066CC;
+  }
+  .Gets-button{
+    background-color: #0066CC;
+    color: white;
+    border-color: #0066CC;
+    height: 40px;
+    width: 170px;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .Right-arrow{
+    float: right;
+    margin-right: 11px;
+    height: 20px;
+  }
+
+
+
+
+/* small devices(phone,400px and down) */
+
+@media screen and (max-width: 400px) {
+
+    .align-Text{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    .Body-text{
+        font-size: small;
+    }
+    .Mind-text{
+        font-size: small;
+    }
+    .Transform-text{
+        font-size: small;
+    }
+    .Shine-text{
+        font-size: small;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .text-column {
+        flex: 1;
+        padding: 20px; 
+      }
+      .text-col{
+        align-items: center;
+        display: flex;
+      }
+      .Round-img{
+        float: left;
+        height: 15px;
+      }
+      .The-story{
+        color: #0066CC; 
+        overflow: hidden;  
+      }
+      .collapse-wrappe{
+        width: 20px;
+        height: 20px;
+        margin-right: -50px;
+      }
+      .image-column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .Float-img{
+        width: 100%;
+        overflow: hidden;
+      }
+      .Img-1{
+        height: 135px;
+        width: 105px;
+        margin-left: 25px;
+      }
+      .Img-2{
+        height: 120px;
+        width: 105px;
+        margin-left: -140px;
+      }
+      .Center-3{
+        display: flex;
+        align-items: center;
+        margin: auto;
+      }
+      .select-img{
+        height: 150px;
+        width: 200px;
+        margin: auto;
+      }
+     
+    .Transform-class{
+        text-align: center;
+        align-items: center;
+        font-size: small;
+      }
+    .span-trans{
+        color: #0066CC;
+      }
+      .Gets-button{
+        background-color: #0066CC;
+        color: white;
+        border-color: #0066CC;
+        height: 60px;
+        width: 170px;
+        align-items: center;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .Right-arrow{
+        float: right;
+        margin-right: 15px;
+        height: 20px;
+      }
+}
+
+
+/* Extra small devices(phone,600px and down) */
+
+@media screen and (max-width: 600px) {
+
+    .align-Text{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    .Body-text{
+        font-size: small;
+    }
+    .Mind-text{
+        font-size: small;
+    }
+    .Transform-text{
+        font-size: small;
+    }
+    .Shine-text{
+        font-size: small;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .text-column {
+        flex: 1;
+        padding: 20px; 
+      }
+      .text-col{
+        align-items: center;
+        display: flex;
+      }
+      .Round-img{
+        float: left;
+      }
+      .The-story{
+        color: #0066CC; 
+        overflow: hidden;  
+      }
+      .collapse-wrappe{
+        width: 20px;
+        height: 30px;
+      }
+      .image-column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .Float-img{
+        width: 100%;
+        overflow: hidden;
+      }
+      .Img-1{
+        height: 135px;
+        width: 105px;
+        margin-left: 25px;
+      }
+      .Img-2{
+        height: 120px;
+        width: 105px;
+        margin-left: -140px;
+      }
+      .Center-3{
+        display: flex;
+        align-items: center;
+        margin: auto;
+      }
+      .select-img{
+        height: 150px;
+        width: 200px;
+        margin: auto;
+      }
+   
+    .Transform-class{
+        text-align: center;
+        align-items: center;
+        font-size: small;
+      }
+    .span-trans{
+        color: #0066CC;
+      }
+      .Gets-button{
+        background-color: #0066CC;
+        color: white;
+        border-color: #0066CC;
+        height: 60px;
+        width: 170px;
+        align-items: center;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .Right-arrow{
+        float: right;
+        margin-right: 15px;
+        height: 20px;
+      }
+}
+
+
+/* Medium devices(Tablets,768px and down) */
+
+@media screen and (max-width: 768px) {
+   
+   
+    .align-Text{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    .Body-text{
+        font-size: small;
+    }
+    .Mind-text{
+        font-size: small;
+    }
+    .Transform-text{
+        font-size: small;
+    }
+    .Shine-text{
+        font-size: small;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .text-column {
+        flex: 1;
+        padding: 20px; 
+      }
+      .text-col{
+        align-items: center;
+        display: flex;
+      }
+      .Round-img{
+        float: left;
+      }
+      .The-story{
+        color: #0066CC; 
+        overflow: hidden;  
+      }
+      .collapse-wrappe{
+        width: 20px;
+        height: 30px;
+      }
+      .image-column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .Float-img{
+        width: 100%;
+        overflow: hidden;
+      }
+      .Img-1{
+        height: 135px;
+        width: 105px;
+        margin-left: 25px;
+      }
+      .Img-2{
+        height: 120px;
+        width: 105px;
+        margin-left: -140px;
+      }
+      .Center-3{
+        display: flex;
+        align-items: center;
+        margin: auto;
+      }
+      .select-img{
+        height: 150px;
+        width: 200px;
+        margin: auto;
+      }
+    
+    .Transform-class{
+        text-align: center;
+        align-items: center;
+        font-size: small;
+      }
+    .span-trans{
+        color: #0066CC;
+      }
+      .Gets-button{
+    background-color: #0066CC;
+    color: white;
+    border-color: #0066CC;
+    height: 40px;
+    width: 170px;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+      }
+      .Right-arrow{
+        float: right;
+        margin-right: 15px;
+        height: 20px;
+      }
+}
+
+

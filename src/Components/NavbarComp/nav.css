@@ -1,0 +1,39 @@
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+}
+.logo {
+  position: relative;
+  right:400px;
+  bottom: 30px;
+  
+  /* margin-left: 45px; */
+}
+.signin-btn  button{
+  /* display: flex; */
+font-weight: bold;
+  /* margin-left:55rem;
+  margin-top: 35px; */
+  font-size: 30px;
+ position: relative;
+ left: 180px;
+
+  font-family: "DM Sans", sans-serif;
+background: transparent;
+  border: none;
+}
+
+.nav button img {
+  height: 25px;
+  width: 25px;
+  margin-top: 7px;
+  margin-left: 4px;
+  text-align: center;
+font-weight: bold;
+
+}
+
+

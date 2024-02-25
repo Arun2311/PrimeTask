@@ -1,0 +1,58 @@
+.box {
+  width: 100%;
+  display: flex;
+ justify-content:center;
+  align-items: center; 
+
+
+}
+.fruit {
+  background-color: #bfdff6;
+  align-items: center;
+  width: 50%;
+  height: 190%;
+}
+
+.fruit img{
+width: 500px;
+height: 400px;
+align-items: center;
+padding: 200px;
+}
+.description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #eef8ff;
+  text-align: center;
+  align-items: center;
+
+  
+ 
+}
+.description h1 {
+ 
+ padding: 330px;
+ text-align: left;
+}
+.description span{
+  color: #0066cc;
+  
+}
+
+/* 
+@media screen and (max-width: 768px) {
+  
+    .image,
+    .description {
+      width: 100%; 
+   padding: 50px;
+   
+    }
+  
+    .description h1 {
+        padding: 49px; 
+        text-align: center; 
+      }
+      
+} */

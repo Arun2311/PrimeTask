@@ -1,0 +1,79 @@
+.Main-Box{
+  padding: 50px;
+}
+.Box-Container{
+  font-family: "DM Sans", sans-serif;
+padding-left: 100px;
+}
+
+.Logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .Logo-container img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+ }
+  .Logo-container span {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px; 
+    text-align: center; 
+    font-size: 25px;
+    width: 10px;
+    
+  }
+  .hand img{
+    background-color: #D0CFEC;
+    border-radius: 70%;
+    padding: 10px;
+  }
+  .puzzle img{
+    background-color: #FFF0A1;
+    border-radius: 70%;
+    padding: 10px;
+  }
+  .mountain img{
+    background-color: #BCE2D7;
+    border-radius: 70%;
+    padding: 10px;
+  }
+  .climb img{
+    background-color: #BFDFF6;
+    border-radius: 70%;
+    padding: 10px;
+  }
+
+  /* @media screen and (max-width: 768px) {
+    .Logo-container {
+        margin-bottom: 20px;
+        margin-left: 100px;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    }
+
+    .Logo-container img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .Logo-container span {
+        font-size: 25px;
+    }
+
+    .hand, .puzzle, .mountain, .climb {
+        width: 300px;
+        height: 140px;
+        margin: 30px;
+    }
+
+    .hand img, .puzzle img, .mountain img, .climb img {
+        padding: 50px;
+    }
+}
+   */
