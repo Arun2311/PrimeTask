@@ -3,8 +3,6 @@
   display: flex;
  justify-content:center;
   align-items: center; 
-
-
 }
 .fruit {
   background-color: #bfdff6;
@@ -56,3 +54,37 @@ padding: 200px;
       }
       
 } */
+
+
+@media screen and (max-width: 450px) {
+  .box {
+   margin-left: 13rem;
+  }
+  .fruit {
+    background-color: #bfdff6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height:500px;
+  }
+  
+  .fruit img{
+height: 100%;
+  align-items: center;
+  padding: 0px;
+  }
+
+  .description {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column ;
+    background-color: #eef8ff;
+    justify-content: center;
+    align-items: center;  
+  }
+  .description h1 {
+   text-align: left;
+  }
+}

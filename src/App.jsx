@@ -25,7 +25,7 @@ function App() {
         <Route path="/blog/blog-subpage" element={<Subpage />} />
 
       </Routes>
-      <Footercomp/>
+      {/* <Footercomp/> */}
     </BrowserRouter>
   );
 }

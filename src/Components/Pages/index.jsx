@@ -11,7 +11,7 @@ import Subscribe from "../SubScribe/Subscribe";
 export default function MainHome() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <HomeComp />
       <ProductComp />
       <ProLogoComp />

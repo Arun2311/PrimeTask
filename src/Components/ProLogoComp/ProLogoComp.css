@@ -77,3 +77,62 @@ padding-left: 100px;
     }
 }
    */
+
+   @media screen and (max-width: 450px) {
+    .Main-Box{
+      padding: 0px;
+    margin-top: 20%;
+    }
+    .Box-Container{
+      font-family: "DM Sans", sans-serif;
+    position: relative;
+    right: 80px ;
+    padding-bottom: 2rem;
+    }
+    
+    .Logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        left: 40%;
+             }
+      
+      .Logo-container img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+     }
+      .Logo-container span {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 500;
+        margin-bottom: 0px; 
+        text-align: center; 
+        font-size: 20px;
+        width: 10px;
+        
+      }
+      .hand img{
+        background-color: #D0CFEC;
+        border-radius: 70%;
+        padding: 10px;
+      }
+      .puzzle img{
+        background-color: #FFF0A1;
+        border-radius: 70%;
+        padding: 10px;
+      }
+      .mountain img{
+        background-color: #BCE2D7;
+        border-radius: 70%;
+        padding: 10px;
+      }
+      .climb img{
+        background-color: #BFDFF6;
+        border-radius: 70%;
+        padding: 10px;
+      }
+
+      
+   }

@@ -46,3 +46,29 @@
       
     }
 } */
+
+
+@media screen and (max-width:450px){
+  .subscribe input {
+    position: relative;
+    left: 150px;
+  }
+  .subscribe h1{
+    position: relative;
+    left: 150px;
+  }
+  .subscribe p{
+    position: relative;
+    left: 150px;
+  }
+
+  .subscribe svg {
+    position: relative;
+    left: 295px;
+   top: -62px;
+
+  }
+  .subscribe{
+  padding-left: 7rem;
+  }
+}

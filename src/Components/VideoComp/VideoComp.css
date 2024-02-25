@@ -31,3 +31,15 @@
         
     }
 }
+
+@media screen and (max-width:450px){
+    
+    .video{
+        margin-top: 15%;
+        width: 835px;
+        height:600px;
+        background-repeat: no-repeat;
+        background-size:cover;
+        
+    }
+}

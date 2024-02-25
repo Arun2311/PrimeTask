@@ -43,3 +43,21 @@ padding: 130px;
         width: 180px;
     }
 } */
+
+@media screen and (max-width: 450px){
+    .bottom img{
+        height: 180px;
+        width: 180px;
+    }
+    .middle{
+    padding: 80px;
+    }
+    .bottom {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        left: 185px;
+        padding: 10px;
+      }
+}

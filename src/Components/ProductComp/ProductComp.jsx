@@ -3,6 +3,7 @@ import fruit from "../../assets/avacado.png";
 import "./ProductComp.css";
 export default function ProductComp() {
   return (
+    
     <div className="box">
       <div className="fruit">
         <img src={fruit} alt="avacado" />
