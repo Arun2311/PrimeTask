@@ -14,8 +14,8 @@
 }
 
 .fruit img{
-width: 500px;
-height: 400px;
+width: 120%;
+height: 200%;
 align-items: center;
 padding: 200px;
 }
@@ -32,7 +32,7 @@ padding: 200px;
 }
 .description h1 {
  
- padding: 330px;
+ padding: 274px;
  text-align: left;
 }
 .description span{

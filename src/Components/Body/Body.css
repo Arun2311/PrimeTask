@@ -31,18 +31,28 @@ gap: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    bottom: 270px;
+    left: 43%;
+    width: 66%;
+
 }
 
 .about{
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 500;
     font-family:"DM Sans",sans-serif;
+    word-wrap: break-word;
+width: 66%;
+    
 }
 
 .statusbar{
     display: flex;  
     justify-content: flex-start;
     gap: 1rem;
+    width: 66%;
+
 }
 
 .status{

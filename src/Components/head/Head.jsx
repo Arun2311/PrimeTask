@@ -8,7 +8,7 @@ const Head = () => {
       <h1 className="name">
         Transform <span className="secondname">Your Life</span>
       </h1>
-      <p className="para">
+      <p className="para mt-5">
         Explore Expert Insights and Guidance on Your Weight Loss Journey
       </p>
     </div>

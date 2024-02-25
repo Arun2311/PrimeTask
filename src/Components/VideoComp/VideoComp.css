@@ -2,7 +2,7 @@
 .video{
     width: 100%;
     height:600px;
-    background-image: url("../assets/videoComp.png");
+    background-image: url("../../assets/videoComp.png");
     background-repeat: no-repeat;
     background-size:cover;
     

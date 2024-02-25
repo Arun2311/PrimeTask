@@ -2,7 +2,7 @@ import React from "react";
 import ContentComp from "../ContentComp/ContentComp";
 import HomeComp from "../HomeComp/HomeComp";
 import Navbar from "../NavbarComp/Navbar";
-import ProLogoComp from "../ProductComp/ProductComp";
+import ProLogoComp from "../ProLogoComp/ProLogoComp";
 import ProductComp from "../ProductComp/ProductComp";
 import VideoComp from "../VideoComp/VideoComp";
 import BottomComp from "../BottomComp/BottomComp";
@@ -16,9 +16,9 @@ export default function MainHome() {
       <ProductComp />
       <ProLogoComp />
       <ContentComp />
-<VideoComp/>
+      <VideoComp />
       <Subscribe />
-      <BottomComp/>
+      <BottomComp />
     </div>
   );
 }

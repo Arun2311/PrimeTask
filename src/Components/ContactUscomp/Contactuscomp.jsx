@@ -40,6 +40,7 @@ const Contactuscomp = () => {
           placeholder="Email"
           value={email}
           onChange={handleEmailChange}
+          className='input'
         />
         <textarea
           placeholder="Message"

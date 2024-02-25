@@ -8,6 +8,7 @@ import img6 from "../../assets/img6.png";
 import img7 from "../../assets/img7.png";
 import img8 from "../../assets/img8.png";
 import "./Body.css";
+import { useNavigate } from "react-router-dom";
 
 const Body = () => {
   const [details, setdetails] = useState([
@@ -68,6 +69,12 @@ const Body = () => {
       day: "Sep 29,2023",
     },
   ]);
+
+  const navigate = useNavigate()
+
+  const handlenavigate = ()=>{
+    navigate("./blog-subpage")
+  }
   return (
     <div>
       <div className="listbody">
@@ -76,7 +83,7 @@ const Body = () => {
             <div className="container">
               <img className="image" src={list.img} />
 
-              <div className="infobox">
+              <div className="infobox" onClick={handlenavigate}>
 
                 <div className="statusbar">
                   <div className="status">

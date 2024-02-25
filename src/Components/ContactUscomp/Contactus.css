@@ -28,7 +28,7 @@ color:#828385;
    margin-right: 40px;
   }
   
-  input{
+  .input{
     width: 80%;
     height: 50px;
     border-radius: 5px;
@@ -123,7 +123,7 @@ color:#828385;
    margin-right: 40px;
   }
   
-  input{
+  .input{
     width: 60%;
     height: 50px;
     border-radius: 5px;
@@ -219,7 +219,7 @@ color:#828385;
    margin-right: 40px;
   }
   
-  input{
+  .input{
     width: 70%;
     height: 40px;
     border-radius: 5px;
@@ -326,7 +326,7 @@ font-size: 15px;
 
   }
   
-  input{
+  .input{
     width: 50%;
     height: 35px;
     border-radius: 5px;
@@ -431,7 +431,7 @@ font-size: 8px;
    margin-right: 20px;
   }
   
-  input{
+  .input{
     width: 60%;
     height: 35px;
     border-radius: 5px;

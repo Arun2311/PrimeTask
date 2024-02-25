@@ -5,7 +5,7 @@ import "./ContentComp.css"
 export default function ContentComp(){
     return(
     
-        <div className="content">
+        <div className="contentcheck">
             <div className="content-we">
                 <h1>We are</h1>
             </div>

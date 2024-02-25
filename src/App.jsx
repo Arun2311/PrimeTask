@@ -8,6 +8,7 @@ import Aboutuscomp from "./Components/AboutUs/Aboutuscomp";
 import ListComp from "./Components/ListComp/ListComp";
 import Footercomp from "./Components/Footercomp/Footercomp"
 import BlogPageAll from "./Components/Blogpage/index";
+import Subpage from "./Components/Blogpage/Subpage";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         <Route path="/blog" element={<BlogPageAll/>} />
         <Route path="/about" element={<Aboutuscomp />} />
         <Route path="/contact" element={<Contactuscomp />} />
+
+        <Route path="/blog/blog-subpage" element={<Subpage />} />
+
       </Routes>
       <Footercomp/>
     </BrowserRouter>
