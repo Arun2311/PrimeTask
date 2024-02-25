@@ -1,12 +1,13 @@
 
 
 .pagefour-box{
-    height: 200px;
+    height: 400px;
     background: #FCF2BF;
    
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 .pagefour-body{

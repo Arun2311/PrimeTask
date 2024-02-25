@@ -14,11 +14,11 @@ export default function BlogPageAll() {
       <Navbar/>
       <Head />
       <Body />
-      {/* <Pageone />
+      <Pageone />
       <Pagetwo />
       <Pagethree />
       <Pagefour />
-      <Pagefive /> */}
+      <Pagefive />
     </div>
   );
 }
