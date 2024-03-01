@@ -25,6 +25,7 @@ body {
   background: #fff0a1;
   text-align: center;
   height: 500px;
+  margin-top: -78px;
 }
 
 
@@ -40,13 +41,13 @@ body {
   .content-body {
     text-align: center;
     background: #fff0a1;
-    height: 300px;
+    height: 360px;
     width: 470px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: -10%;
+    margin-top: -45%;
   }
   .first-name {
     font-family: "Rage Italic", cursive;
@@ -73,7 +74,7 @@ body {
     .content-body {
         text-align: center;
         background: #fff0a1;
-        height: 300px;
+        height: 370px;
         display: flex;
         justify-content: center;
         align-items: center;

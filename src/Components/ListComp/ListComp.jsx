@@ -96,8 +96,8 @@ const ListComp = () => {
 
       {menuVisible && (
         <div className="menuOptions">
-          <ul>
-            <li>
+          <ul onClick={toggleMenu}>
+            <li >
               <Link to="/">Home</Link>
             </li>
             <li>
