@@ -4,9 +4,9 @@ import "./Head.css";
 const Head = () => {
   return (
     
-    <div className="content">
-      <h1 className="name">
-        Transform <span className="secondname">Your Life</span>
+    <div className="content-body">
+      <h1 className="first-name">
+        Transform <span className="second-name">Your Life</span>
       </h1>
       <p className="para mt-5">
         Explore Expert Insights and Guidance on Your Weight Loss Journey

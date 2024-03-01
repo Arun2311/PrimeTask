@@ -12,7 +12,7 @@ const Test = () => {
   return (
     <footer className="footer">
       <div className="footer-left">
-        <img src={LogoNav} alt="LogoNav" className="logo" />
+        <img src={LogoNav} alt="LogoNav" className="footerimg" />
       </div>
       <div className="footer-center">
         <a href="https://www.linkedin.com/"><img src={Linkedin} alt="LinkedIn" className="social-icon" /></a>

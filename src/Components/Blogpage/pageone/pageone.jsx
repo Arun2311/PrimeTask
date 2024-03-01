@@ -5,40 +5,39 @@ import copy from "../../../assets/copy.png"
 import twitter from "../../../assets/Twitter.png"
 import linkin from "../../../assets/linkedin.png"
 import fb from "../../../assets/Facebook.png"
-// import back from "../../assets/o.png"
 
 
 const Pageone = () => {
     return (
-        <div className='blogbody'>
+        <div className='blog-body'>
 
-          <div className='blogheading'>
-            <h1 className='blogtitle'>Empowering your<span className='inline'>wellness </span> journey Exciting tips from health experts</h1>
+          <div className='blog-heading'>
+            <h1 className='blog-title'>Empowering your<span className='inline'>wellness </span> journey Exciting tips from health experts</h1>
           </div>
 
-          <div className='blogimagebox'>
-<img className='blogimage' src={blogimage}/>
+          <div className='blog-imagebox'>
+<img className='blog-image' src={blogimage}/>
 
-<div className='bloglinkinfo'>
+<div className='blog-linkinfo'>
 
-<div className='intro'>
+<div className='introdo'>
 <div className='writer'>
-<p className='linkfont'>Written by</p><h3 className='linkname'> Rhode Coldman</h3>
+<p className='link-font'>Written by</p><h3 className='line-name'> Rhode Coldman</h3>
 </div>
 
 <div className='writer'>
-<p className='linkfont'>Published on</p><h3 className='linkname'> Jan 2,2024</h3>
+<p className='link-font'>Published on</p><h3 className='line-name'> Jan 2,2024</h3>
 </div>
 </div>
 
 
 
-<div className='links'>
-<ul className='linklist'>
-    <li className='copy'><img className='copyimg' src={copy}/><h3 className='linkname'>copy link</h3></li>
-    <li><img className='icon' src={twitter}/></li>
-    <li><img className='icon' src={linkin}/></li>
-    <li><img className='icon' src={fb}/></li>
+<div className='linksdo'>
+<ul className='link-list'>
+    <li className='copydo'><img className='copy-img' src={copy}/><h3 className='link-name'>copy link</h3></li>
+    <li><img className='icony' src={twitter}/></li>
+    <li><img className='icony' src={linkin}/></li>
+    <li><img className='icony' src={fb}/></li>
 </ul>
 </div>
 

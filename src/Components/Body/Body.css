@@ -202,7 +202,7 @@ width: 66%;
          display: flex;
          justify-content:space-between ;
          gap: 1rem;
-         height: 100px;
+         height: 150px;
      }
      
      .image{
@@ -235,6 +235,7 @@ width: 66%;
      
      .day{
          font-size: 7px;
+         line-height: 0rem;
      }
 }
 

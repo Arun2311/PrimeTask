@@ -8,7 +8,7 @@ import Navbar from '../NavbarComp/Navbar.jsx';
 export default function Subpage() {
   return (
     <div>
-        <Navbar/>
+        {/* <Navbar/> */}
             <Pageone />
       <Pagetwo />
       <Pagethree />

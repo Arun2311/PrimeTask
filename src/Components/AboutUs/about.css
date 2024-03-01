@@ -106,8 +106,10 @@
 
 /* small devices(phone,400px and down) */
 
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 450px) {
+.totty{
+  margin-top: -10%;
+}
     .align-Text{
         display: flex;
         flex-direction: column;
@@ -174,7 +176,9 @@
       .Center-3{
         display: flex;
         align-items: center;
-        margin: auto;
+        margin-top: 20px;
+        padding-top: 6rem;
+        padding-bottom: 1rem;
       }
       .select-img{
         height: 150px;
@@ -277,12 +281,14 @@
       .Center-3{
         display: flex;
         align-items: center;
-        margin: auto;
+        /* margin: auto; */
+        margin-top:20% ;
       }
       .select-img{
         height: 150px;
         width: 200px;
-        margin: auto;
+        /* margin: auto; */
+        margin-top: 20%;
       }
    
     .Transform-class{

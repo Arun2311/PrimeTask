@@ -10,6 +10,7 @@ import "./about.css";
 import Footercomp from "../Footercomp/Footercomp";
 import Paragraph from "../Paragraph/Paragraph";
 import Navbar from "../NavbarComp/Navbar";
+import Carouselcomp from "../corosalcomp/Carouselcomp";
 
 const Aboutuscomp = () => {
   const [hide, setHide] = useState(false);
@@ -64,7 +65,7 @@ const Aboutuscomp = () => {
   };
 
   return (
-    <div>
+    <div className="totty">
               {/* <Navbar /> */}
 
       <div className="align-Text">
@@ -83,7 +84,7 @@ const Aboutuscomp = () => {
           <div className="collapse-wrapper">
             <Collapse
               items={items}
-              defaultActiveKey={["1"]}
+              defaultActiveKey={[""]}
               onChange={onChange}
               className="collapse-align"
             />
@@ -112,6 +113,9 @@ const Aboutuscomp = () => {
           Get Started{" "}
           <img src={Rightarrow} className="Right-arrow" alt="Rightarrow" />
         </button>
+      </div>
+      <div>
+        <Carouselcomp/>
       </div>
       {/* <Footercomp/> */}
     </div>

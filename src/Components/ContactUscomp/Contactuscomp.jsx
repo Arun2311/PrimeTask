@@ -30,9 +30,9 @@ const Contactuscomp = () => {
 
     <div className="container">
       <div className="left-column">
-        <h2 className='have-question ms-5 ps-5'>Have Questions? Ask <br></br>us anything you want and <br></br> we’ll answer</h2>
-        <p className='Send-mail ms-5 ps-5'>Send a mail instead?</p>
-        <a className='Hello-primalcare ms-5 ps-5'>hello@primalcare.com</a>
+        <h2 className='have-question '>Have Questions? Ask <br></br>us anything you want and <br></br> we’ll answer</h2>
+        <p className='Send-mail '>Send a mail instead?</p>
+        <a className='Hello-primalcare '>hello@primalcare.com</a>
       </div>
       <div className="right-column">
         <input
@@ -58,7 +58,9 @@ const Contactuscomp = () => {
         <button className='Follo-facebook'>Follow on facebook</button>
         <button className='Follo-twiter'>Follow on twitter</button>
       </div>
+<div style={{marginBottom:"100%"}}></div>
     </div>
+
   );
 };
 
