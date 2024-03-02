@@ -3,7 +3,7 @@ import "./Head.css";
 
 const Head = () => {
   return (
-    
+    <>
     <div className="content-body">
       <h1 className="first-name">
         Transform <span className="second-name">Your Life</span>
@@ -12,6 +12,10 @@ const Head = () => {
         Explore Expert Insights and Guidance on Your Weight Loss Journey
       </p>
     </div>
+
+
+    </>
+    // <Footer
   );
 };
 

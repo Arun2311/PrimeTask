@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Round from "../../assets/Round.png";
 import Fruit from "../../assets/Fruit.png";
 import Nature from "../../assets/Nature.png";
@@ -14,6 +14,19 @@ import Carouselcomp from "../corosalcomp/Carouselcomp";
 
 const Aboutuscomp = () => {
   const [hide, setHide] = useState(false);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+    };
+
+    handleResize(); // Call once to set initial value
+    window.addEventListener("resize", handleResize); // Listen for window resize
+
+    return () => window.removeEventListener("resize", handleResize); // Cleanup
+  }, []);
 
   const items = [
     {
@@ -66,7 +79,7 @@ const Aboutuscomp = () => {
 
   return (
     <div className="totty">
-              {/* <Navbar /> */}
+      {/* <Navbar /> */}
 
       <div className="align-Text">
         <h1 className="Body-text">Body</h1>
@@ -75,31 +88,58 @@ const Aboutuscomp = () => {
         <h1 className="Shine-text">shine</h1>
       </div>
 
-      <div className="container">
+      {/* <div className=`container ${!isMobile && arcontainer}`> */}
+      <div className={`container ${!isMobile && "arcontainer"}`}>
+
         <div className="text-column">
           <div className="text-col">
-            <img src={Round} className="Round-img" alt="Round Image" />
-            <p className="The-story">The Story</p>
+            {/* <img src={Round} className="Round-img" alt="Round Image" /> */}
+            {/* <p className="The-story">The Story</p> */}
           </div>
-          <div className="collapse-wrapper">
-            <Collapse
+
+          <div className="collapse-wrapper handchange">
+            {/* <Collapse
               items={items}
               defaultActiveKey={[""]}
               onChange={onChange}
               className="collapse-align"
-            />
+            /> */}
+          
+              <Collapse
+                items={items}
+                defaultActiveKey={[""]}
+                onChange={onChange}
+                className="collapse-align"
+                style={{ width: "100%" }} // Set width to 100% for mobile screens
+              />
+      
           </div>
         </div>
 
-        <div className="image-column">
+        {/* <div className="image-column">
           <div className="Float-img">
             <img src={Fruit} alt="Image 1" className="Img-1" />
             <img src={Nature} alt="Image 2" className="Img-2" />
           </div>
+        </div> */}
+        <div className="image-column">
+          <div className="Float-img">
+            {!isMobile && (
+              <>
+                <img src={Fruit} alt="Image 1" className="Img-1" />
+                <img src={Nature} alt="Image 2" className="Img-2" />
+              </>
+            )}
+          </div>
         </div>
       </div>
+
+
+
       <div className="Center-3">
-        <img src={operate} className="select-img" alt="operate" />
+        {!isMobile && (
+          <img src={operate} className="select-img" alt="operate" />
+        )}
       </div>
 
       <div>
@@ -115,9 +155,11 @@ const Aboutuscomp = () => {
         </button>
       </div>
       <div>
-        <Carouselcomp/>
+        <Carouselcomp />
       </div>
-      {/* <Footercomp/> */}
+      <div className="mt-4">
+        <Footercomp />
+      </div>
     </div>
   );
 };

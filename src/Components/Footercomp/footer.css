@@ -130,7 +130,11 @@ body {
   .footer {
       padding: 12px;
       width: 470px ;
+      /* width: 195% ; */
+
     }
+
+    
     
     .footer-left, .footer-right {
       flex: 1;

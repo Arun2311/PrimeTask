@@ -1,4 +1,5 @@
 import React from "react";
+import Footercomp from "../Footercomp/Footercomp"
 
 import Head from "../head/Head.jsx";
 import Body from "../Body/Body.jsx";
@@ -11,6 +12,7 @@ export default function BlogPageAll() {
       {/* <Navbar/> */}
       <Head />
       <Body />
+      <Footercomp/>
 
   
     </div>

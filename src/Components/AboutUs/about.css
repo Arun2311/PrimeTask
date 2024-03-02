@@ -6,6 +6,17 @@
     margin: auto;
     align-items: center;
 }
+
+
+@media (max-width: 768px) {
+  
+
+  .handchange{
+    width: 213% !important;
+  }
+
+}
+
 .Body-text{
     font-size: xx-large;
 }
@@ -315,6 +326,11 @@
         margin-right: 15px;
         height: 20px;
       }
+}
+
+.arcontainer{
+  position: relative;
+  left: 15%;
 }
 
 

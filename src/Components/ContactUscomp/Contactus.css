@@ -44,6 +44,11 @@ color:#828385;
   .Sent-message{
     align-items: center;
   }
+
+
+  .chnagear{
+    margin-left: 140px;
+  }
   .Send-message {
     width: 160px;
     padding: 10px;
@@ -53,7 +58,10 @@ color:#828385;
     cursor: pointer;
     border-radius: 5px;
   }
-  
+  .footchange{
+    margin-top: 304px !important;
+  }
+
  .join-Uss{
     display: flex;
     margin-top: 100px;
@@ -425,6 +433,9 @@ font-size: 8px;
     margin-bottom: 30px;
     font-size: 8px;
   }
+
+
+
   textarea {
     width: 60%;
     border-radius: 5px;
@@ -449,6 +460,7 @@ font-size: 8px;
  .join-Uss{
     display: flex;
     margin-top: 80px;
+    margin-left: 87px;
  }
 
 .News-letter1{
