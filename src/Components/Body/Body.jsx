@@ -80,21 +80,21 @@ const Body = () => {
       <div className="listbody">
         {details.map((list, index) => (
           <div className="cards" key={index}>
-            <div className="container">
-              <img className="image" src={list.img} />
+            <div className="container-c">
+              <img className="image-c" src={list.img} />
 
-              <div className="infobox" onClick={handlenavigate}>
+              <div className="infobox-c" onClick={handlenavigate}>
 
-                <div className="statusbar">
-                  <div className="status">
+                <div className="statusbar-c">
+                  <div className="status-c">
                     <h3 className="status1">{list.status1}</h3>
                   </div>
                   <h3 className="status2">{list.status2}</h3>
                 </div>
 
-                <div className="about">{list.info}</div>
+                <div className="about-c">{list.info}</div>
 
-                <div ><h3 className="day mt-3">{list.day}</h3></div>
+                <div ><h3 className="day">{list.day}</h3></div>
               </div>
             </div>
           </div>

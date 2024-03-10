@@ -4,8 +4,7 @@
     height:600px;
     background-image: url("../../assets/videoComp.png");
     background-repeat: no-repeat;
-    background-size:cover;
-    
+    background-size:cover;  
 }
 .video h1{
     text-align: center;
@@ -20,26 +19,64 @@
     font-family:"Proza Libre",sans-serif;
      color: #FFFFFF;
 }
-
-@media screen and (max-width:720px){
+@media screen and (max-width:1400px){
     
     .video{
-        width: 780px;
+        width: 1400px;
         height:600px;
         background-repeat: no-repeat;
         background-size:cover;
-        
+    }
+}
+
+@media screen and (max-width:1200px){
+    
+    .video{
+        width: 1200px;
+        height:600px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    
+    .video{
+        width: 1000px;
+        height:600px;
+    }
+}
+
+@media screen and (max-width:800px){
+    
+    .video{
+        width: 800px;
+        height:600px;
+    }
+}
+
+@media screen and (max-width:600px){
+    
+    .video{
+        margin-top: 0px;
+        width: 600px;
+        height:600px;
     }
 }
 
 @media screen and (max-width:450px){
     
     .video{
-        margin-top: 15%;
-        width: 835px;
-        height:600px;
+        width:450px;
+        height:400px;
         background-repeat: no-repeat;
         background-size:cover;
-        
+        background-position: center;
     }
+
+    .video h1{
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 160px;
+        font-family:"Proza Libre", sans-serif;
+        font-weight: 10;
+    } 
 }

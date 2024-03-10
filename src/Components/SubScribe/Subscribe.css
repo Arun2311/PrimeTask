@@ -5,27 +5,20 @@
 }
 .subscribe input {
   font-family: "DM Sans", sans-serif;
-  position: relative;
+  /* position: relative; */
   padding: 13px;
   margin: 1px 0px 10px 0px;
-  /* position: relative;
-   left: 150px; */
   border-radius: 7px 7px 7px 7px;
   border-color: rgb(32, 32, 255);
 }
 .subscribe h1 {
   padding: 15px;
   font-family: "Proza Libre", sans-serif;
-  /* position: relative;
-    left: 130px;  */
 }
 .subscribe p {
   font-family: "DM Sans", sans-serif;
   padding: 15px;
   font-size: 18px;
-  /* position: relative;
-    left: 130px; */
-  /* margin-left: 229px; */
 }
 .subscribe svg {
   width: 46px;
@@ -39,36 +32,44 @@
   border-radius: 0px 7px 7px 0px;
 }
 
-/* 
-@media screen and (max-width: 768px){
-    .subscribe svg{
-       position: relative;
-      
-    }
-} */
-
 
 @media screen and (max-width:450px){
-  .subscribe input {
-    position: relative;
-    left: 150px;
+  .subscribe {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .subscribe h1{
-    position: relative;
-    left: 150px;
-  }
-  .subscribe p{
-    position: relative;
-    left: 150px;
-  }
-
   .subscribe svg {
     position: relative;
-    left: 295px;
-   top: -62px;
+    right: 0px;
+top: -62px;
+    left: 300px;
+  }
+  
+  
+}
 
+@media screen and (max-width:400px){
+  .subscribe svg {
+    position: relative;
+    right: 0px;
+top: -62px;
+    left: 250px;
   }
-  .subscribe{
-  padding-left: 7rem;
+  
+  
+}
+
+@media screen and (max-width:340px){
+  .subscribe svg {
+    position: relative;
+    right: 0px;
+top: -62px;
+    left: 200px;
   }
+  
 }

@@ -55,10 +55,10 @@ color: #0066cc;
   }
   
   .menuOptions {
-    top: 100px;
+    top: 50px;
     right: 0px;
-    left: 180px;
-    width: 480px;
+    left: -40px;
+    width: 450px;
     height: 100vh;
     opacity: 0.9; /* Adjust transparency here */
     background: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
@@ -90,4 +90,26 @@ color: #0066cc;
     color: #ffcc00;
   }
   
+}
+
+@media screen and (max-width:350px) {
+
+   .menuOptions {
+     top: 50px;
+     right: 0px;
+left: -13px;
+     height: 100vh;
+     opacity: 0.9; /* Adjust transparency here */
+     background: black; /* White with 70% opacity */
+     font-size: 20px;
+     color: #0066cc;
+     transition: right 0.3s ease;
+     z-index: 1000;
+     /* rgba(255, 255, 255, 0.7) */
+     display: flex;
+     justify-content: center;
+     padding-top: 4rem;
+   }
+  
+
 }

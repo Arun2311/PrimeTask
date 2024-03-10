@@ -1,138 +1,401 @@
-.Main-Box{
-  padding: 50px;
-}
-.Box-Container{
-  font-family: "DM Sans", sans-serif;
-padding-left: 100px;
+.Main-Box {
+  padding: 70px;
+  display: flex;
 }
 
+.Box-Container {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  padding-left: 50px;
+  width: 500px;
+}
+
+.show-right,.show-left{
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+.show-right img {
+  width: 500px;
+  height: 450px;
+  margin-left: 205px;
+  justify-content: center;
+  object-fit:fill;
+ }
+ .show-left img{
+  width: 500px;
+  height: 450px;
+  margin-right: 205px;
+  justify-content: center;
+  object-fit:fill;
+
+ }
+
 .Logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+.Logo-container img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.span-name {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  width: 10px;
+}
+
+.hand img {
+  background-color: #d0cfec;
+  border-radius: 50%;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+}
+.puzzle img {
+  background-color: #fff0a1;
+  border-radius: 50%;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+}
+.mountain img {
+  background-color: #bce2d7;
+  border-radius: 50%;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+}
+.climb img {
+  background-color: #bfdff6;
+  border-radius: 50%;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.hovered img {
+  display: none;
+}
+
+.hovered span {
+  transform: scale(1.2);
+}
+
+span,
+img {
+  transition: all 0.3s ease;
+}
+
+.hide {
+  display: none;
+ width: 250px !important;
+ height: 250px !important;
+  border-radius:1px !important;
+ margin-left: 190px;
+}
+
+
+
+.hand.hovered img.hide,
+.puzzle.hovered img.hide,
+.mountain.hovered img.hide,
+.climb.hovered img.hide {
+  display: inline-block;
+  background-color: white;
+}
+.hand.hovered span {
+  color: blue;
+  transform: scale(1.2);
+  font-size: 30px;
+}
+.puzzle.hovered span {
+  color: yellow;
+  transform: scale(1.2);
+  font-size: 30px;
+}
+.mountain.hovered span {
+  color: rgb(34, 205, 151);
+  transform: scale(1.2);
+  font-size: 30px;
+}
+.climb.hovered span {
+  color: blue;
+  transform: scale(1.2);
+  font-size: 30px;
+}
+
+
+span,
+img,
+img.hide {
+  transition: all 0.4s ease;
+}
+
+ @media screen and (max-width: 1400px) {
+  .Main-Box {
+    width: 1400px;
+    padding: 30px;
+    display: flex;
+  }
+  
+  .Box-Container {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    padding-left: 0px;
+    width: 400px;
+  }
+  .Logo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding-left: 0px;
+    padding-top: 50px;
   }
   
-  .Logo-container img {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
- }
-  .Logo-container span {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    margin-bottom: 10px; 
-    text-align: center; 
-    font-size: 25px;
-    width: 10px;
-    
+  .show-right,.show-left{
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
   }
-  .hand img{
-    background-color: #D0CFEC;
-    border-radius: 70%;
-    padding: 10px;
-  }
-  .puzzle img{
-    background-color: #FFF0A1;
-    border-radius: 70%;
-    padding: 10px;
-  }
-  .mountain img{
-    background-color: #BCE2D7;
-    border-radius: 70%;
-    padding: 10px;
-  }
-  .climb img{
-    background-color: #BFDFF6;
-    border-radius: 70%;
-    padding: 10px;
-  }
-
-  /* @media screen and (max-width: 768px) {
-    .Logo-container {
-        margin-bottom: 20px;
-        margin-left: 100px;
-        justify-content: center;
-        align-items: center;
-    width: 100%;
-    }
-
-    .Logo-container img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .Logo-container span {
-        font-size: 25px;
-    }
-
-    .hand, .puzzle, .mountain, .climb {
-        width: 300px;
-        height: 140px;
-        margin: 30px;
-    }
-
-    .hand img, .puzzle img, .mountain img, .climb img {
-        padding: 50px;
-    }
-}
-   */
-
-   @media screen and (max-width: 450px) {
-    .Main-Box{
-      padding: 0px;
-    margin-top: 20%;
-    }
-    .Box-Container{
-      font-family: "DM Sans", sans-serif;
-    position: relative;
-    right: 80px ;
-    padding-bottom: 2rem;
-    }
-    
-    .Logo-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        position: relative;
-        left: 40%;
-             }
-      
-      .Logo-container img {
-        width: 25px;
-        height: 25px;
-        margin-right: 10px;
-     }
-      .Logo-container span {
-        font-family: "DM Sans", sans-serif;
-        font-weight: 500;
-        margin-bottom: 0px; 
-        text-align: center; 
-        font-size: 20px;
-        width: 10px;
-        
-      }
-      .hand img{
-        background-color: #D0CFEC;
-        border-radius: 70%;
-        padding: 10px;
-      }
-      .puzzle img{
-        background-color: #FFF0A1;
-        border-radius: 70%;
-        padding: 10px;
-      }
-      .mountain img{
-        background-color: #BCE2D7;
-        border-radius: 70%;
-        padding: 10px;
-      }
-      .climb img{
-        background-color: #BFDFF6;
-        border-radius: 70%;
-        padding: 10px;
-      }
-
-      
+  .show-right img {
+    width: 500px;
+    height: 450px;
+    margin-left: 0px;
+    justify-content: center;
+    object-fit:cover;
    }
+   .show-left img{
+    width: 500px;
+    height: 450px;
+    margin-right: 0px;
+    justify-content: center;
+    object-fit:cover;
+  
+   }
+ }
+
+
+ @media screen and (max-width: 1200px) {
+ .Main-Box {
+  padding: 0px;
+  display: flex;
+  width: 1200px;
+}
+
+.Box-Container {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  padding-left: 20px;
+  width: 500px;
+}
+
+.show-right,.show-left{
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+.show-right img {
+  width: 500px;
+  height: 450px;
+  margin-left: 0px;
+  justify-content: center;
+  object-fit:cover;
+ }
+ .show-left img{
+  width: 500px;
+  height: 450px;
+  margin-right: 0px;
+  justify-content: center;
+  object-fit:cover;
+
+ }
+
+.span-name {
+  font-size: 20px;
+}
+
+.hand img {
+  width: 50px;
+  height: 50px;
+}
+.puzzle img {
+  width: 50px;
+  height: 50px;
+}
+.mountain img {
+  width: 50px;
+  height: 50px;
+}
+.climb img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.hand.hovered span {
+  font-size: 25px;
+}
+.puzzle.hovered span {
+  font-size: 25px;
+}
+.mountain.hovered span {
+  font-size: 25px;
+}
+.climb.hovered span {
+  font-size: 25px;
+}
+
+ }
+
+
+ @media screen and (max-width: 1000px) {
+  .Main-Box {
+   width: 1000px;
+ }
+ 
+ .Box-Container {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  padding-left: 20px;
+  width: 500px;
+}
+
+.show-right,.show-left{
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+.show-right img {
+  width: 500px;
+  height: 450px;
+  margin-left: 0px;
+  justify-content: center;
+  object-fit:cover;
+ }
+ .show-left img{
+  width: 500px;
+  height: 450px;
+  margin-right: 0px;
+  justify-content: center;
+  object-fit:cover;
+
+ }
+
+.span-name {
+  font-size: 20px;
+}
+
+.hand img {
+  width: 50px;
+  height: 50px;
+}
+.puzzle img {
+  width: 50px;
+  height: 50px;
+}
+.mountain img {
+  width: 50px;
+  height: 50px;
+}
+.climb img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.hand.hovered span {
+  font-size: 25px;
+}
+.puzzle.hovered span {
+  font-size: 25px;
+}
+.mountain.hovered span {
+  font-size: 25px;
+}
+.climb.hovered span {
+  font-size: 25px;
+}
+
+  }
+
+  @media screen and (max-width: 800px) {
+    .Main-Box {
+     width: 800px;
+   }
+   
+   .Box-Container {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+    width: 500px;
+  }
+  
+    }
+
+
+    @media screen and (max-width: 600px) {
+      .Main-Box {
+       width: 600px;
+     }
+     
+     .Box-Container {
+      padding-left: 0px;
+      width: 0px;
+    }
+    
+    .Logo-container {
+      padding-top: 100px;
+    }
+    
+    .span-name {
+      font-size: 15px;
+    }
+    
+    .hand.hovered span {
+      font-size: 20px;
+    }
+    .puzzle.hovered span {
+      font-size:20px;
+    }
+    .mountain.hovered span {
+      font-size: 20px;
+    }
+    .climb.hovered span {
+      font-size: 20px;
+    }
+    
+      }
+
+
+      @media screen and (max-width: 450px) {
+        .Main-Box {
+         width:450px;
+       }
+
+      .span-name {
+        font-size: 13px;
+      }
+      
+      .hand.hovered span {
+        font-size: 15px;
+      }
+      .puzzle.hovered span {
+        font-size:15px;
+      }
+      .mountain.hovered span {
+        font-size: 15px;
+      }
+      .climb.hovered span {
+        font-size: 15px;
+      }
+      
+        }

@@ -1,10 +1,10 @@
 import React from 'react';
 import "./pageone.css"
 import blogimage from "../../../assets/blogimage.png"
-import copy from "../../../assets/copy.png"
-import twitter from "../../../assets/Twitter.png"
-import linkin from "../../../assets/linkedin.png"
-import fb from "../../../assets/Facebook.png"
+import copyapp from "../../../assets/copy.png"
+import twitterapp from "../../../assets/Twitter.png"
+import linkinapp from "../../../assets/linkedin.png"
+import fbapp from "../../../assets/Facebook.png"
 
 
 const Pageone = () => {
@@ -32,12 +32,12 @@ const Pageone = () => {
 
 
 
-<div className='linksdo'>
-<ul className='link-list'>
-    <li className='copydo'><img className='copy-img' src={copy}/><h3 className='link-name'>copy link</h3></li>
-    <li><img className='icony' src={twitter}/></li>
-    <li><img className='icony' src={linkin}/></li>
-    <li><img className='icony' src={fb}/></li>
+<div className='linklist-c'>
+<ul className='link-c'>
+    <li className='copydo'><img className='copy-img' src={copyapp}/><h3 className='link-name'>copy link</h3></li>
+    <li className='icon-cc'><img className='icon-c' src={twitterapp}/></li>
+    <li className='icon-cc'><img className='icon-c' src={linkinapp}/></li>
+    <li className='icon-cc'><img className='icon-c' src={fbapp}/></li>
 </ul>
 </div>
 

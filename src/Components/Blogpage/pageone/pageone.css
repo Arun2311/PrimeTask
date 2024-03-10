@@ -62,11 +62,11 @@ text-align: center;
     font-family: "DM Sans",sans-serif;
 }
 
-.icony{
+.icon-c{
     list-style: none;
     background: #0066CC;
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     border: 10px solid #0066CC;
 }
@@ -81,7 +81,7 @@ width: 20px;
 }
 }
 
-.link-list{
+.link-c{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +114,7 @@ width: 20px;
         gap: 5rem;
     }
     
-    .link-list{
+    .link-c{
         gap: 1rem;
     }
     
@@ -146,16 +146,16 @@ width: 20px;
     font-size: 10px;
     line-height: 2px;
      }
-     .icony{
-        height: 15px;
-        width: 15px;
+     .icon-c{
+        height: 30px;
+        width: 30px;
     }
     .copy-img{
         height: 13px;
         width: 13px;
     }
     
-    .link-list{
+    .link-c{
         gap: 1rem;
     }
     
@@ -165,7 +165,6 @@ width: 20px;
 @media screen and (max-width: 550px){
     .blog-body{
         margin: 10%;
-        margin-top: -10%;
     }
 
     .blog-heading{
@@ -201,17 +200,23 @@ width: 20px;
     font-size: 7px;
     line-height: 3px;
      }
-     .icony{
-        height: 10px;
-        width: 10px;
+     .icon-c{
+        height: 20px;
+        width: 20px;
         border: 5px solid #0066CC;
+    }
+    .icon-cc{
+        padding-bottom: 10px;
     }
     .copydo-img{
         height: 5px;
         width: 5px;
     }
+    .introdo{
+        gap: 3rem;
+    }
 
-    .link-list{
+    .link-c{
         gap: 0.5rem;
         margin-top: 1rem;
         display: flex;
@@ -222,12 +227,14 @@ width: 20px;
 }
 
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 400px){
     .copydoimg{
         height: 3px;
         width: 3px;
     }
-    
+    .introdo{
+    gap: 1.5rem;
+    }
 
     .blog-body{
         margin: 5%;
@@ -267,13 +274,13 @@ width: 20px;
     font-size: 5px;
     line-height: 2px;
      }
-     .icony{
+     .icon-c{
         height: 10px;
         width: 10px;
         border: 4px solid #0066CC;
     }
     
-    .link-list{
+    .link-c{
         gap: 0.5rem;
     }
 }

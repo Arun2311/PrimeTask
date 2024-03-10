@@ -12,7 +12,7 @@ export default function BlogPageAll() {
       {/* <Navbar/> */}
       <Head />
       <Body />
-      <Footercomp/>
+      {/* <Footercomp/> */}
 
   
     </div>

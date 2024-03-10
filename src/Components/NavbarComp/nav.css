@@ -3,22 +3,17 @@
   width: 100%;
   justify-content: space-around;
 }
+
 .logo {
   position: relative;
   right: 400px;
   bottom: 20px;
-
-  /* margin-left: 45px; */
 }
 .signin-btn button {
-  /* display: flex; */
   font-weight: bold;
-  /* margin-left:55rem;
-  margin-top: 35px; */
   font-size: 30px;
   position: relative;
   left: 180px;
-
   font-family: "DM Sans", sans-serif;
   background: transparent;
   border: none;
@@ -33,16 +28,87 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 1400px) {
+  .nav{
+    width: 1400px;
+  }
+  .toggle{
+    margin-left: 3rem;
+  }
+  .signin-btn button {
+    left: 110px;
+  }
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    .nav{
+      width: 1200px;
+    }
+    .toggle{
+      margin-left: 3rem;
+    }
+    .signin-btn button {
+      left: 80px;
+    }
+    }
+
+    @media screen and (max-width: 1000px) {
+      .nav{
+        width: 1000px;
+      }
+      .toggle{
+        margin-left: 6rem;
+      }
+      .logo {
+        right: 250px;
+      }
+      .signin-btn button {
+        left: 60px;
+      }
+      }
+
+      @media screen and (max-width: 800px) {
+        .nav{
+          width: 800px;
+        }
+        .toggle{
+          margin-left: 8rem;
+        }
+        .logo {
+          right: 200px;
+        }
+        .signin-btn button {
+          left: 40px;
+        }
+        }
+
+        @media screen and (max-width: 600px) {
+          .nav{
+            width: 600px;
+          }
+          .toggle{
+            margin-left: 12rem;
+          }
+          .logo {
+            right: 150px;
+          }
+          .signin-btn button {
+            left: 20px;
+          }
+          }
+
+
+@media screen and (max-width: 450px) {
   .nav {
     display: flex;
-    width: 100%;
+    width: 450px;
     justify-content: space-around;
   }
 
   .logo {
     position: relative;
-    /* right:400px; */
     right: 200px;
     bottom: 10px;
   }
@@ -53,16 +119,7 @@
   }
 
   .signin-btn button {
-    /* display: flex; */
-    font-weight: bold;
-    font-size: 30px;
-    position: relative;
-    /* left: 450px; */
-    left: 170px;
-
-    font-family: "DM Sans", sans-serif;
-    background: transparent;
-    border: none;
+    left: 80px;
   }
   .nav button {
     margin-left: 150px;
@@ -77,5 +134,49 @@
     margin-left: 4px;
     text-align: center;
     font-weight: bold;
+  }
+  .toggle{
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav {
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+  }
+
+  .logo {
+    position: relative;
+    right: 150px;
+    bottom: 10px;
+  }
+
+  .logo img {
+    height: 80px;
+    width: 100px;
+  }
+
+  .signin-btn button {
+    left: 100px;
+  }
+  .nav button {
+    margin-left: 150px;
+    margin-top: 0rem;
+    bottom: 70px;
+  }
+
+
+  .nav button img {
+    height: 25px;
+    width: 25px;
+    margin-top: 7px;
+    margin-left: 4px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .toggle{
+    margin-top: 3rem;
   }
 }

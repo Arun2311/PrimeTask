@@ -2,18 +2,20 @@ import React from 'react'
 import "./HomeComp.css"
 import homepic from "../../assets/homepic.png"
 import hello from "../../assets/hello.png"
+import GetStartComp from './GetStartComp'
+import TextAnimationcomp from './TextAnimationcomp'
 
 export default function HomeComp() {
   return (
   <>
   < div className='main'>
  <div className='home'>
- <h1>Transform <br /> <span>from inside-out</span></h1>
- <button className='btn-start'>Get Started</button>
+  <TextAnimationcomp/><br/>
+ <h1> <br /> from  inside-out</h1>
+  <GetStartComp/>
  </div>
  <div className='home-pic'> 
  <img src={homepic} alt="homepic"  />
-
  </div>
  </div>
  <div className='hello'>
@@ -21,7 +23,7 @@ export default function HomeComp() {
   <img src={hello} alt="hello" height={20}  width={20}/>
   <span >Hello!</span>
   </div>
-  <p>  Lorem ipsum dolor sit amet consectetur healthy and fit</p>
+  <p>  Lorem ipsum dolor sit amet consectetur <span className='disappear'> healthy and fit</span></p>
  </div>
 
  </>

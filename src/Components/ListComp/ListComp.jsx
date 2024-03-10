@@ -72,8 +72,6 @@ import { Route, Link, Routes } from "react-router-dom";
 import align from "../../assets/align-justify.png";
 
 import Pages from "../Pages/index";
-import Contactuscomp from "../ContactUscomp/Contactuscomp";
-import Aboutuscomp from "../AboutUs/Aboutuscomp";
 
 const ListComp = () => {
   const [menuVisible, setMenuVisible] = useState(false);

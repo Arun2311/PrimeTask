@@ -4,11 +4,10 @@ import Pagetwo from "./pagetwo/pagetwo.jsx";
 import Pagethree from "./pagethree/pagethree.jsx";
 import Pagefour from "./pagefour/pagefour.jsx";
 import Pagefive from "./pagefive/pagefive.jsx";
-import Navbar from '../NavbarComp/Navbar.jsx';
+import "./Subpage.css"
 export default function Subpage() {
   return (
-    <div>
-        {/* <Navbar/> */}
+    <div className='Subpage-c'>
             <Pageone />
       <Pagetwo />
       <Pagethree />

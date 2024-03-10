@@ -15,7 +15,6 @@ const Head = () => {
 
 
     </>
-    // <Footer
   );
 };
 

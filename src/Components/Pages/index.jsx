@@ -7,11 +7,10 @@ import ProductComp from "../ProductComp/ProductComp";
 import VideoComp from "../VideoComp/VideoComp";
 import BottomComp from "../BottomComp/BottomComp";
 import Subscribe from "../SubScribe/Subscribe";
-import Footercomp from "../Footercomp/Footercomp"
 import "./index.css"
 export default function MainHome() {
   return (
-    <div>
+    <div className="Homepage-A">
       {/* <Navbar /> */}
       <HomeComp />
       <ProductComp />
@@ -20,7 +19,6 @@ export default function MainHome() {
       <VideoComp />
       <Subscribe />
       <BottomComp />
-      <Footercomp/>
 
     </div>
   );

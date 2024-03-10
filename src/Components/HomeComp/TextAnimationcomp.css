@@ -1,0 +1,88 @@
+.text-animation-container {
+    font-size: 80px;
+    font-weight: bold;
+    position: relative;
+    color: #0066CC;
+    transition: background-color 1s ease-in-out; /* Add transition for background color */
+    background-color: #fff; /* Initial background color */
+  }
+  
+  .common {
+    color: #0066CC;
+    position: absolute;
+    opacity: 1;
+   
+    left: 30px; /* Adjust as needed */
+  }
+  
+  .text-animation {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    left: 70px; /* Adjust as needed */
+    color: #0066CC; /* Specify the font color */
+  }
+  
+  .show {
+    opacity: 1;
+  }
+  
+  .slide-right-to-left {
+    animation: slideRightToLeft 3s ease-in-out forwards;
+  }
+  
+  .slide-left-to-right {
+    animation: slideLeftToRight 3s ease-in-out forwards;
+  }
+  
+  .slide-top-to-bottom {
+    animation: slideTopToBottom 3s ease-in-out forwards;
+  }
+  
+  @keyframes slideRightToLeft {
+    0% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-10%);
+    }
+  }
+  
+  @keyframes slideLeftToRight {
+    0% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(15%);
+    }
+  }
+  
+  @keyframes slideTopToBottom {
+    0% {
+      opacity: 1;
+      transform: translateY(20%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(0%);
+    }
+  }
+  
+  @media screen and (max-width: 1200px){
+    .text-animation-container {
+      font-size: 60px;
+    }
+    
+  }
+
+    
+  @media screen and (max-width: 450px){
+    .text-animation-container {
+      font-size: 40px;
+    }
+    
+  }

@@ -58,8 +58,30 @@ body {
   margin-right: 10px; 
 }
 
+@media screen and (max-width: 1400px) {
+  .footer {
+      width: 1400px;
+    }
 
-@media screen and (max-width: 850px) {
+  }
+
+@media screen and (max-width: 1200px) {
+  .footer {
+      width: 1200px;
+    }
+
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .footer {
+        width: 1000px;
+      }
+  
+    }
+    
+  
+
+@media screen and (max-width: 800px) {
 
   body {
     margin: 0;
@@ -73,6 +95,7 @@ body {
       background-color: black;
       color: white;
       padding: 15px;
+      width: 800px;
       
     }
     
@@ -122,77 +145,16 @@ body {
   }
 }
 
-
-
-@media screen and (max-width: 500px) {
-
-  
+@media screen and (max-width: 600px) {
   .footer {
-      padding: 12px;
-      width: 470px ;
-      /* width: 195% ; */
-
+      width: 600px;
     }
 
-    
-    
-    .footer-left, .footer-right {
-      flex: 1;
-      text-align: center;
-    }
-    
-    .footer-center {
-      flex: 2;
-      display: flex;
-      justify-content: center;
-    }
-    
-    .footerimg {
-      max-width: 80px;
-    }
-    
-    .social-icon {
-      width: 20px;
-      margin: 0 10px;
-    }
-    .Facebook-icon{
-      height: 18px;
-      width: 10px;
-      margin: 0 10px;
-    }
-   .twitter{
-      margin-top: 4px;
-      width: 20px;
-      margin-left: 10px;
-      
-   }
-   .footer-right {
-    display: flex;
-    align-items: center; 
   }
   
-  .side-image-text {
-    display: flex;
-    align-items: center; 
-    font-size:small;
-    /* margin-right: 2px; */
-  }
-  
-  /* .side-image {
-    margin-right: 10px; 
-  } */
-}
 
+@media screen and (max-width: 450px) {
 
-
-
-@media screen and (max-width: 400px) {
-
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   
   .footer {
       display: flex;
@@ -201,6 +163,7 @@ body {
       background-color: black;
       color: white;
       padding: 5px;
+      width: 450px;
        
     }
     
@@ -245,8 +208,4 @@ body {
     font-size:9px;
     
   }
-  
-  /* .side-image {
-    /* margin-left: 20px;  */
-  /* } */
 }
