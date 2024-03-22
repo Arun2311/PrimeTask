@@ -1,14 +1,60 @@
-import React from "react";
-import "./Subscribe.css"
+import React, { useState } from "react";
+import { AiFillCheckCircle } from "react-icons/ai";
+import "./Subscribe.css";
 
-export default function Subscribe(){
-    return(
-        <div className="subscribe">
+export default function Subscribe() {
+  const [inputValue, setInputValue] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const handleClick = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      setMessage("Yay! you are in");
+
+      setTimeout(() => {
+        setInputValue("");
+      }, 2000);
+    }, 2000);
+  };
+
+  return (
+    <div className="subscribe">
+      <>
         <h1>Subscribe to our newsletter</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        <input type="text"  placeholder="Enter your Email" size={35} /><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="white" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        <p className="L-Para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+      </>
+      {!message ? (
+        <>
+          <input
+            type="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            placeholder="Enter your email"
+            size={45}
+          />
+
+          <button onClick={handleClick}>
+            {isLoading ? (
+              <div className="loading-spinner"></div>
+            ) : (
+              <span>&#8594;</span>
+            )}
+          </button>
+        </>
+      ) : (
+        <div className="success-message">
+          <p>
+            <AiFillCheckCircle />
+            {message}
+          </p>
         </div>
-    )
+      )}
+    </div>
+  );
 }
 
 

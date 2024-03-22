@@ -1,4 +1,5 @@
 .text-animation-container {
+  margin-left: -2rem;
     font-size: 80px;
     font-weight: bold;
     position: relative;

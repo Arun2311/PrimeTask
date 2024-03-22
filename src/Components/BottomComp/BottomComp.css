@@ -2,12 +2,12 @@
     margin-top: 50px;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 .bottom img{
-    height: 180px;
-    width: 180px;
+    height: 210px;
+    width: 200px;
 }
 .middle{
 padding: 130px;
@@ -34,8 +34,12 @@ padding: 130px;
         margin-top: 50px;
         width: 1400px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
+    }
+    .bottom img{
+        height: 200px;
+        width: 180px;
     }
 }
 
@@ -72,12 +76,28 @@ padding: 130px;
 
 @media screen and (max-width: 600px){
     .bottom{
+display: grid;
+justify-content: center;
         margin-top: 50px;
         width: 600px;
     }
     .bottom img{
         height: 100px;
         width: 100%;
+    }
+    .first{
+        display: none;
+    }
+    .last{
+        display: none;
+    }
+    .middle{
+        padding: 3rem;
+        padding-top: 0;
+        text-align: center;
+    }
+    .middle button {
+        padding: 30px 8px;
     }
 }
 
@@ -86,5 +106,6 @@ padding: 130px;
         margin-top: 50px;
         width: 450px;
     }
+
 }
 

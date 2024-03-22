@@ -3,6 +3,7 @@
 .Total-contpg {
     display: flex;
     flex-direction: row;
+    padding: 100px;
   }
   
   .left-B-column,
@@ -20,12 +21,12 @@ color:#828385;
   }
   .left-B-column {
     flex: 1.5;
-    margin-left: 30px;
+    margin-left: 250px;
   }
   
   .Rightb-column{
     flex: 1;
-   margin-right: 60px;
+   margin-right: 200px;
   }
   
   .input{
@@ -98,7 +99,9 @@ color:#828385;
 /* For large size destop or laptop */
 
 @media screen and (max-width: 1150px) {
-
+.Total-contpg{
+  padding-right: 0;
+}
 
   .left-B-column,
   .Rightb-column{
@@ -114,13 +117,13 @@ color:#828385;
 
   }
   .left-B-column {
-    flex: 1;
+    flex: 1.5;
     margin-left: 30px;
   }
   
   .Rightb-column{
     flex: 1;
-   margin-right: 40px;
+   margin-right: 0px;
   }
   
   .input{
@@ -190,7 +193,10 @@ color:#828385;
 
 @media screen and (max-width: 768px) {
 
-
+  .Total-contpg {
+  padding-right: 0;
+  padding-bottom: 50px;
+  }
   
   .left-B-column,
   .Rightb-column{
@@ -206,7 +212,7 @@ color:#828385;
 
   }
   .left-B-column{
-    flex: 1;
+    flex: 1.5;
     margin-left: 30px;
   }
   
@@ -305,7 +311,7 @@ font-size: 15px;
   }
   .left-B-column{
     flex: 1;
-    margin-left: 15px;
+    margin-left: 0px;
   }
   
   .Rightb-column{
@@ -315,7 +321,6 @@ font-size: 15px;
  flex-direction: column;
  align-items: center;
  margin-top: 25px;
-
   }
   
   .input{
@@ -386,7 +391,9 @@ font-size: 15px;
 
 @media screen and (max-width: 450px) {
 
-
+.Total-contpg{
+  padding: 0;
+}
   
   .left-B-column,
   .Rightb-column{
@@ -405,8 +412,8 @@ font-size: 8px;
 
   }
   .left-B-column{
-    flex: 1;
-    margin-left: 20px;
+    flex: 0.8;
+    margin-left: 50px;
   }
   
   .Rightb-column{
@@ -489,6 +496,12 @@ font-size: 8px;
 
   .Total-contpg{
       width: 1400px;
+  }
+  .left-B-column{
+    margin-left: 50px;
+  }
+  .Rightb-column{
+    margin-right: 0px;
   }
 
   }

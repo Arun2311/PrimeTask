@@ -1,112 +1,86 @@
-import React, { useState } from "react";
-import line from "../../assets/Line.png";
+import React, { useState } from 'react';
 import hand from "../../assets/hand.png";
 import puzzle from "../../assets/puzzle.png";
 import mountain from "../../assets/mountain.png";
 import climb from "../../assets/climb.png";
-import pizza from "../../assets/pizza1.png";
-import steths from "../../assets/Stethoscope.png";
-import tomato from "../../assets/tomato.png";
-import girl from "../../assets/girl.png";
-import "./ProLogoComp.css";
+import pizzaimg from "../../assets/pizza1.png";
+import stethsimg from "../../assets/Stethoscope.png";
+import tomatoimg from "../../assets/tomato.png";
+import girlimg from "../../assets/girl.png";
+import line from "../../assets/Line.png";
+import "./ProLogoComp.css"
 
 const ProLogoComp = () => {
-  const [hoveredElement, setHoveredElement] = useState(null);
 
-  const handleMouseEnter = (element) => {
-    setHoveredElement(element);
-  };
+const [steths,setsteths]=useState(false)
+const [girl,setgirl]=useState(false)
+const [tomato,settomato]=useState(false)
+const [pizza,setpizza]=useState(false)
 
-  const handleMouseLeave = () => {
-    setHoveredElement(null);
-  };
 
-  const getHoveredImage = () => {
-    switch (hoveredElement) {
-      case "hand":
-        return pizza;
-    
-      case "mountain":
-        return tomato;
-   
-      default:
-        return null;
+const showpizza=()=>{
+setpizza(true)
+}
+const showtomato=()=>{
+    settomato(true)
     }
-  };
-  const getHoveredImageleft = () => {
-    switch (hoveredElement) {
-      
-      case "puzzle":
-        return steths;
-      
-      case "climb":
-        return girl;
-      default:
-        return null;
-    }
-  };
-  return (
-    <div className="Main-Box">
-       <div className="show-left">
-        {hoveredElement && <img src={getHoveredImageleft()} alt="hovered" />}
-      </div>
-      
-      <div className="Box-Container">
-        <img src={line} alt="line" />
-        <span>Lorem ipsum dolor</span>
-      </div>
-      <div className="Logo-container">
-        <div
-          className={`hand ${hoveredElement === "hand" ? "hovered" : ""}`}
-          onMouseEnter={() => handleMouseEnter("hand")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img src={hand} alt="logo" />
-          <span className="span-name">Lorem ipsum dolor sit amet consectetur. In.</span>
-          <br />
-          <br />
-        </div>
 
-        <div
-          className={`puzzle ${hoveredElement === "puzzle" ? "hovered" : ""}`}
-          onMouseEnter={() => handleMouseEnter("puzzle")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img src={puzzle} alt="logo" />
-          <span className="span-name">Lorem ipsum dolor sit amet consectetur. In.</span>
-          <br />
-          <br />
-        </div>
+    const showsteth=()=>{
+        setsteths(true)
+        }
 
-        <div
-          className={`mountain ${
-            hoveredElement === "mountain" ? "hovered" : ""
-          }`}
-          onMouseEnter={() => handleMouseEnter("mountain")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img src={mountain} alt="logo" />
-          <span className="span-name">Lorem ipsum dolor sit amet consectetur. In.</span>
-          <br />
-          <br />
-        </div>
+        const showgirl=()=>{
+            setgirl(true)
+            }
+     
+            const hidepizza=()=>{
+                setpizza(false)
+                }
+                const hidetomato=()=>{
+                    settomato(false)
+                    }
+                
+                    const hidesteth=()=>{
+                        setsteths(false)
+                        }
+                
+                        const hidegirl=()=>{
+                            setgirl(false)
+                            }
 
-        <div
-          className={`climb ${hoveredElement === "climb" ? "hovered" : ""}`}
-          onMouseEnter={() => handleMouseEnter("climb")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img src={climb} alt="logo" />
-          <span className="span-name">Lorem ipsum dolor sit amet consectetur. In.</span>
-          <br />
-          <br />
+    return (
+        <div className='prologocomp-maincontainer'>
+
+<div className='prologocomp-firstimg'>
+{ steths&&
+<img src={stethsimg} className='prologocomp-image' />
+}
+{ girl&&
+<img src={girlimg} className='prologocomp-image' />
+}
+</div>
+
+<div className='prologocomp-font-box'>
+    <p className='prologocomp-head'><img src={line}/>Lorem Ipsum Dollar</p>
+    <ul className='prologocomp-list'>
+<li className='prologocomp-listfont' onMouseEnter={showpizza} onMouseLeave={hidepizza}><img className='hand prologocomp-icon' src={hand}/><h1 className='prologocomp-font'>Lorem ipsum dolor sit amet consectetur. In.</h1></li>
+<li className='prologocomp-listfont'onMouseEnter={showsteth} onMouseLeave={hidesteth}><img className='puzzle prologocomp-icon' src={puzzle}/><h1 className='prologocomp-font'>Lorem ipsum dolor sit amet consectetur. In.</h1></li>
+<li className='prologocomp-listfont' onMouseEnter={showtomato} onMouseLeave={hidetomato}><img className='mountain prologocomp-icon' src={mountain}/><h1 className='prologocomp-font'>Lorem ipsum dolor sit amet consectetur. In.</h1></li>
+<li className='prologocomp-listfont'onMouseEnter={showgirl} onMouseLeave={hidegirl}><img className='climb prologocomp-icon' src={climb}/><h1 className='prologocomp-font'>Lorem ipsum dolor sit amet consectetur. In.</h1></li>
+</ul>
+</div>
+
+<div className='prologocomp-secondimg'>
+{ pizza&&
+<img src={pizzaimg} className='prologocomp-image'/>
+}
+{ tomato&&
+<img src={tomatoimg} className='prologocomp-image'/>
+}
+</div>
+
         </div>
-      </div>
-      <div className="show-right">
-        {hoveredElement && <img src={getHoveredImage()} alt="hovered" />}
-      </div>
-    </div>
-  );
-};
+    );
+}
 
 export default ProLogoComp;

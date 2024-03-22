@@ -6,12 +6,13 @@
 
 .logo {
   position: relative;
-  right: 400px;
+  right: 700px;
   bottom: 20px;
 }
 .signin-btn button {
+  margin-top: 1rem;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   position: relative;
   left: 180px;
   font-family: "DM Sans", sans-serif;
@@ -28,6 +29,18 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 1700px) {
+  .toggle{
+    margin-left: 3rem;
+  }
+  .signin-btn button {
+    left: 110px;
+  }
+  .logo {
+    right: 550px;
+  }
+  }
+
 
 @media screen and (max-width: 1400px) {
   .nav{
@@ -38,6 +51,9 @@
   }
   .signin-btn button {
     left: 110px;
+  }
+  .logo {
+    right: 500px;
   }
   }
 
@@ -52,6 +68,9 @@
     .signin-btn button {
       left: 80px;
     }
+    .logo {
+      right: 450px;
+    }
     }
 
     @media screen and (max-width: 1000px) {
@@ -62,7 +81,7 @@
         margin-left: 6rem;
       }
       .logo {
-        right: 250px;
+        right: 360px;
       }
       .signin-btn button {
         left: 60px;
@@ -77,7 +96,7 @@
           margin-left: 8rem;
         }
         .logo {
-          right: 200px;
+          right: 300px;
         }
         .signin-btn button {
           left: 40px;
@@ -92,7 +111,7 @@
             margin-left: 12rem;
           }
           .logo {
-            right: 150px;
+            right: 200px;
           }
           .signin-btn button {
             left: 20px;
@@ -109,12 +128,12 @@
 
   .logo {
     position: relative;
-    right: 200px;
+    right: 230px;
     bottom: 10px;
   }
 
   .logo img {
-    height: 80px;
+    height: 70px;
     width: 100px;
   }
 
@@ -149,7 +168,7 @@
 
   .logo {
     position: relative;
-    right: 150px;
+    right: 180px;
     bottom: 10px;
   }
 

@@ -3,34 +3,119 @@
   padding: 15px;
   margin-top: 30px;
 }
+
 .subscribe input {
-  font-family: "DM Sans", sans-serif;
-  /* position: relative; */
+  visibility: visible; 
+  opacity: 1;
+  position: relative;
   padding: 13px;
-  margin: 1px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
   border-radius: 7px 7px 7px 7px;
-  border-color: rgb(32, 32, 255);
+  border-color: #0066cc;
+  transition: opacity 0.5s ease; 
+}
+.L-Para{
+  font-size: 25px;
+  font-family: "DM Sans", sans-serif;
+  padding: 15px;
 }
 .subscribe h1 {
   padding: 15px;
-  font-family: "Proza Libre", sans-serif;
 }
-.subscribe p {
-  font-family: "DM Sans", sans-serif;
-  padding: 15px;
-  font-size: 18px;
-}
-.subscribe svg {
-  width: 46px;
-  height: 51px;
+
+.subscribe button {
+  width: 55px;
+  height: 55px;
   position: relative;
-  right: 50px;
-  top: -1px;
-  left: -46px;
-  background-color: rgb(32, 32, 255);
-  padding: 13px 15px 12px 15px;
+  right: 56px;
+  top: 4px;
+  background-color: #0066cc;
   border-radius: 0px 7px 7px 0px;
+  border: none;
+  &:hover{
+    outline: 2px solid #0066cc;
+  }
 }
+
+.subscribe span {
+  font-size: 25px;
+  color: white;
+  position: relative;
+  bottom: 4px;
+}
+
+.loading-spinner {
+  color: white;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 5s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.success-message p {
+  font-size: 30px;
+  font-weight: 400;
+  color: #0066cc;
+
+  position: relative;
+  animation: slideInAndZoom 1s ease;
+}
+
+@keyframes slideInAndZoom {
+  0% {
+    transform: scale(1) translateX(0%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1) translateX(0%);
+  }
+}
+
+@media screen and (max-width:600px){
+  .subscribe {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subscribe button {
+    right: 0px;
+    top: -65px;
+    left: 440px;
+}
+}
+
+@media screen and (max-width:500px){
+  .subscribe button {
+    right: 0px;
+    top: -65px;
+    left: 350px;
+}
+.L-Para{
+  font-size: 15px;
+}
+.subscribe h1{
+  font-size: 25px;
+}
+}
+
 
 
 @media screen and (max-width:450px){
@@ -43,33 +128,20 @@
     flex-direction: column;
     justify-content: center;
   }
-  .subscribe svg {
-    position: relative;
+  .subscribe button {
     right: 0px;
-top: -62px;
+    top: -65px;
     left: 300px;
-  }
-  
-  
+}
 }
 
 @media screen and (max-width:400px){
-  .subscribe svg {
-    position: relative;
+  .subscribe {
+    margin-left: 40px;
+  }
+  .subscribe button {
     right: 0px;
-top: -62px;
+    top: -65px;
     left: 250px;
-  }
-  
-  
 }
-
-@media screen and (max-width:340px){
-  .subscribe svg {
-    position: relative;
-    right: 0px;
-top: -62px;
-    left: 200px;
-  }
-  
 }
