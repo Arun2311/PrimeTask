@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: 'ProzaDisplay'; 
+    src: url('../../assets/Fonts/PROZADISPLAY-BOLD.TTF') format('woff');;
+  
+  }
 .bottom{
     margin-top: 50px;
     width: 100%;
@@ -9,12 +15,14 @@
 .bottom img{
     height: 210px;
     width: 200px;
+  
 }
 .middle{
 padding: 130px;
 }
 .middle h1{
-    font-family:"Proza Libre", sans-serif;
+    /* font-family:"Pr/oza Libre", sans-serif; */
+    font-family: "ProzaDisplay";
     padding: 10px;
     text-align: center;
     font-size: 40px;

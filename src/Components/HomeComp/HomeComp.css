@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'ProzaDisplay'; 
+  src: url('../../assets/Fonts/PROZADISPLAY-BOLD.TTF') format('woff');;
+
+}
+
 .main {
   display: flex;
   justify-content:space-between;
@@ -11,9 +17,10 @@
 }
 .home h1 {
   color: #0066cc;
-  font-size: 70px;
-  font-weight: 500;
-  font-family:"Proza Libre", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  padding-top: 30px;
+  font-family:"ProzaDisplay";
   color: #171615;
 }
 .button{
@@ -132,6 +139,8 @@ animation: typing  2s steps(20) infinite forwards;
   }
   .home h1 {
     font-size: 60px;
+    font-family:"ProzaDisplay";
+
   }
 }
 
@@ -146,6 +155,8 @@ animation: typing  2s steps(20) infinite forwards;
   }
   .home h1 {
     font-size: 50px;
+    font-family:"ProzaDisplay";
+
   }
   .home-pic img {
     align-items: flex-end;
@@ -166,7 +177,10 @@ margin-left: 250px;
   }
   .home h1 {
     font-size: 50px;
+    font-family:"ProzaDisplay";
+
   }
+
   .home-pic img {
     align-items: flex-end;
 width: 60%;
@@ -187,6 +201,8 @@ margin-left: 200px;
   }
   .home h1 {
     font-size: 50px;
+    font-family:"ProzaDisplay";
+
   }
   .home-pic img {
     align-items: flex-end;
@@ -215,6 +231,8 @@ margin-left:100px;
   }
   .home h1 {
     font-size: 40px;
+    font-family:"ProzaDisplay";
+
   }
   .home-pic img {
     align-items: flex-end;

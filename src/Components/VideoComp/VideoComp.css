@@ -1,4 +1,18 @@
+@font-face {
+    font-family: 'RageItalic'; 
+    src: url('../../assets/Fonts/RAGE.TTF') format('woff');;
 
+}
+@font-face {
+    font-family: 'ProzaDisplaylight'; 
+    src: url('../../assets/Fonts/PROZADISPLAY-LIGHT.TTF') format('woff');;
+ 
+}
+@font-face {
+    font-family: 'ProzaDisplay'; 
+    src: url('../../assets/Fonts/PROZADISPLAY-BOLD.TTF') format('woff');;
+ 
+}
 .video{
     width: 100%;
     height:600px;
@@ -10,13 +24,14 @@
     text-align: center;
     color: #FFFFFF;
     padding-top: 300px;
-
-    font-family:"Proza Libre", sans-serif;
+font-size: 48px;
+    font-family: "ProzaDisplaylight";
     font-weight: 10;
 } 
 
 .video i { 
-    font-family:"Proza Libre",sans-serif;
+    font-family: "RageItalic";
+
      color: #FFFFFF;
 }
 @media screen and (max-width:1400px){
@@ -76,7 +91,7 @@
         text-align: center;
         color: #FFFFFF;
         padding-top: 160px;
-        font-family:"Proza Libre", sans-serif;
+        font-family: "ProzaDisplaylight";
         font-weight: 10;
     } 
 }

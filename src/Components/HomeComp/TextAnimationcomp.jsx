@@ -11,7 +11,7 @@ const TextAnimationcomp = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimationIndex(prevIndex => (prevIndex + 1) % repeatedWords.length);
-    }, 1000); // Change the interval duration if needed
+    }, 3000); // Change the interval duration if needed
     return () => clearInterval(interval);
   }, []);
 
@@ -30,7 +30,9 @@ const TextAnimationcomp = () => {
               ? 'slide-left-to-right'
               : 'slide-top-to-bottom'
           }`}
-          style={{ animationDelay: `${index * 4}s` }}
+          // style={{ animationDelay: `${index * 5}s` }}
+          style={{ animationDelay: `${index * 3 + 2}s` }} // Adjust delay for each word
+
         >
           {word}
         </span>
