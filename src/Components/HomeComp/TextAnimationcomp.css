@@ -29,15 +29,15 @@
   }
   
   .slide-right-to-left {
-    animation: slideRightToLeft 3s ease-in-out forwards;
+    animation: slideRightToLeft 1s ease-in-out forwards;
   }
   
   .slide-left-to-right {
-    animation: slideLeftToRight 3s ease-in-out forwards;
+    animation: slideLeftToRight 1s ease-in-out forwards;
   }
   
   .slide-top-to-bottom {
-    animation: slideTopToBottom 3s ease-in-out forwards;
+    animation: slideTopToBottom 1s ease-in-out forwards;
   }
   
   @keyframes slideRightToLeft {

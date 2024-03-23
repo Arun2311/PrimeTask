@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: rgb(251, 251, 240);
 }
 .bottom img{
     height: 210px;
@@ -25,8 +26,9 @@ padding: 130px;
     padding: 10px 30px ;
     font-size: 18px;
     color:rgb(77, 190, 243) ;
-    border-radius: 10px;
+    border-radius: 5px;
     border:1px solid rgb(77, 190, 243);
+    background: transparent;
 }
 
 @media screen and (max-width: 1400px){

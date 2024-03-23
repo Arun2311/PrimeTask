@@ -7,6 +7,7 @@
 }
 .home {
   padding-left: 100px;
+  margin-top: -200px;
 }
 .home h1 {
   color: #0066cc;
@@ -112,6 +113,10 @@ animation: typing  2s steps(20) infinite forwards;
 @media screen and (max-width: 1400px){
   .main {
     width: 1400px;
+  }
+  .home {
+    padding-left: 100px;
+    margin-top: 0px;
   }
 
 }
