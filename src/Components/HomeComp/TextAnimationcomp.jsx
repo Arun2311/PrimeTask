@@ -3,7 +3,7 @@ import "./TextAnimationcomp.css";
 
 const TextAnimationcomp = () => {
   const [animationIndex, setAnimationIndex] = useState(0);
-  const words = ['ranscend', 'hrive', 'ransform'];
+  const words = ['ranscend', ' hrive', 'ransform'];
 
   // Concatenate multiple instances of the words array
   const repeatedWords = [...words, ...words, ...words, ...words,...words, ...words,...words, ...words,...words, ...words,...words, ...words,...words, ...words,...words, ...words,];
@@ -11,7 +11,7 @@ const TextAnimationcomp = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimationIndex(prevIndex => (prevIndex + 1) % repeatedWords.length);
-    }, 3000); // Change the interval duration if needed
+    }, 1000); // Change the interval duration if needed
     return () => clearInterval(interval);
   }, []);
 
@@ -30,7 +30,7 @@ const TextAnimationcomp = () => {
               ? 'slide-left-to-right'
               : 'slide-top-to-bottom'
           }`}
-          style={{ animationDelay: `${index * 3}s` }}
+          style={{ animationDelay: `${index * 4}s` }}
         >
           {word}
         </span>

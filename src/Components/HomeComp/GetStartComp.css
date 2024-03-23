@@ -12,6 +12,11 @@
     transition:  0.3s ease, color 0.3s ease;
   }
   
+  @font-face {
+    font-family: 'ProzaDisplay'; 
+    src: url('../../assets/Fonts/PROZADISPLAY-BOLD.TTF') format('woff');;
+ 
+}
   .get-started-btn.hovered {
     background: linear-gradient(to bottom right, #0045ff, #4e8cff) ;
     color: #fff;

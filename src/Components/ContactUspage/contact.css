@@ -3,14 +3,23 @@
 .Total-contpg {
     display: flex;
     flex-direction: row;
-    padding: 100px;
+    padding: 60px 30px 60px 30px;
   }
+
+
+  @font-face {
+    font-family: 'ProzaDisplaylight'; 
+    src: url('../../assets/Fonts/PROZADISPLAY-LIGHT.TTF') format('woff');;
+ 
+}
+
 
   .input-class::placeholder {
     color: black;
-    font-weight: 300;
+    font-weight: 400;
     padding-left: 20px;
     font-size: 17.12px;
+    padding-top: 10px;
   }
   
   .left-B-column,
@@ -18,7 +27,12 @@
     padding: 20px;
   }
   .have-question{
-    font-size: 35px;
+    font-family: "ProzaDisplaylight";
+    font-size: 50px;
+    font-weight:400 ;
+    padding: 10px;
+line-height: 65px;
+
   }
 
   .Send-mail{
@@ -37,17 +51,20 @@ color:#828385;
   }
   
   .input{
-    width: 80%;
+    width: 108%;
     height: 50px;
     border-radius: 5px;
     margin-bottom: 30px;
-    
+    border: 1.06px solid #E6E6E6
+
   }
   textarea {
-    width: 80%;
+    width: 108%;
     border-radius: 5px;
     height: 100px;
     margin-bottom: 15px;
+    border: 1.06px solid #E6E6E6
+
   }
   .Class-message{
     align-items: center;
@@ -68,7 +85,9 @@ color:#828385;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 70px;
+    /* margin-top: 40px; */
+    margin-bottom: 70px;
+
     padding-left: 300px;
     padding-right: 250px;
     
@@ -120,6 +139,8 @@ color:#828385;
     padding: 20px;
   }
   .have-question{
+    font-family: "ProzaDisplaylight";
+    line-height: 30px;
     font-size: 40px;
   }
 
@@ -215,6 +236,7 @@ color:#828385;
     padding: 10px;
   }
   .have-question{
+    font-family: "ProzaDisplaylight";
     font-size: 25px;
   }
 
@@ -313,6 +335,8 @@ color:#828385;
     padding: 0px;
   }
   .have-question{
+    font-family: "ProzaDisplaylight";
+
     font-size: 18px;
   }
 
@@ -413,6 +437,8 @@ font-size: 15px;
     padding: 2px;
   }
   .have-question{
+    font-family: "ProzaDisplaylight";
+
     font-size: 14px;
   }
 .Hello-primalcare{

@@ -3,9 +3,14 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'RageItalic'; 
+  src: url('../../assets/Fonts/RAGE.TTF') format('woff');;
+
+}
 .first-name {
-  font-family: "Rage Italic", cursive;
-  font-size: 50px;
+  font-family: "RageItalic" ;
+  font-size: 63px;
   font-weight: 500;
   line-height: 10px;
   width: 500px;

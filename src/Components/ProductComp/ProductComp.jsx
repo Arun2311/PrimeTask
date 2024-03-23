@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import avacado from "../../assets/avacado.png";
 import pear from "../../assets/pear.png";
 import cherry from "../../assets/cherry1.png";
@@ -42,8 +42,18 @@ const products = [
 
 const ProductComp = () => {
   const [activeProductIndex, setActiveProductIndex] = useState(0);
+  const [showDescription, setShowDescription] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveProductIndex((prevIndex) => (prevIndex + 1) % products.length);
+    }, 3000); // Switch product every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleMouseEnter = (index) => {
+    setShowDescription(true);
     setTimeout(() => {
       if (index < 3) {
         index += 1;
@@ -51,13 +61,16 @@ const ProductComp = () => {
       } else {
         setActiveProductIndex(0);
       }
-    });
+    }, 1000);
   };
 
+  const handleMouseLeave = () => {
+    setShowDescription(false);
+  };
 
   return (
     <div className="product-container">
-      <div className="box" onClick={() => handleMouseEnter(activeProductIndex)} >
+      <div className="box" onClick={() => handleMouseEnter(activeProductIndex)} onMouseLeave={handleMouseLeave}>
         <div
           className="fruit"
           style={{ background: products[activeProductIndex].background }}
@@ -69,7 +82,7 @@ const ProductComp = () => {
           />
         </div>
         <div
-          className="description"
+          className={`description ${showDescription ? "show" : ""}`}
           style={{ background: products[activeProductIndex].content }}
         >
           <h1>

@@ -30,7 +30,7 @@ const Contactuscomp = () => {
       <div className="Total-contpg">
         <div className="left-B-column">
           <h2 className="have-question">
-            Have Questions? Ask <br></br>us anything you want and <br></br>{" "}
+            Have Questions? Ask <br></br>us anything you want and 
             we’ll answer
           </h2>
           <p className="Send-mail">Send a mail instead?</p>

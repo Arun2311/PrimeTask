@@ -3,20 +3,41 @@
     flex-direction: column;
     margin: auto;
     align-items: center;
+    margin-top: 78px;
 }
 
+@font-face {
+    font-family: 'ProzaDisplay'; 
+    src: url('../../assets/Fonts/PROZADISPLAY-BOLD.TTF') format('woff');;
+ 
+}
+@font-face {
+    font-family: 'RageItalic'; 
+    src: url('../../assets/Fonts/RAGE.TTF') format('woff');;
+
+}
+
+
 .Body-text{
-    font-size: xx-large;
+    font-size: 60px;
+    font-family: "ProzaDisplay";
+
+
 }
 .Mind-text{
-    font-size: xx-large;
+    font-size: 60px;
+    font-family: "ProzaDisplay";
+
 }
 .Transform-text{
-    font-size: xx-large;
+    font-size: 100.01px;
     color: #0066CC;
+    font-family: "RageItalic";
 }
 .Shine-text{
-    font-size: xx-large;
+    font-size: 60px;
+    font-family: "ProzaDisplay";
+
 }
 .Operateclass-B{
     display: flex;
@@ -47,6 +68,7 @@ margin-top: 70px;
     font-size: large;
   }
 .span-trans{
+    font-family: "RageItalic";
     color: #0066CC;
   }
   .Gets-button{
@@ -58,7 +80,7 @@ margin-top: 70px;
     align-items: center;
     border-radius: 5px;
     margin-top: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 90px;
     margin-left: 0;
   }
   .Right-arrow{
@@ -71,16 +93,23 @@ margin-top: 70px;
 
     .Body-text{
         font-size: x-large;
+        font-family: "ProzaDisplay";
     }
     .Mind-text{
         font-size: x-large;
+        font-family: "ProzaDisplay";
+
     }
     .Transform-text{
         font-size: x-large;
         color: #0066CC;
+        font-family: "RageItalic";
+
     }
     .Shine-text{
         font-size: x-large;
+        font-family: "ProzaDisplay";
+
     }
     .B-Operatd-img{
         width: 200px;
@@ -129,16 +158,24 @@ margin-top: 70px;
 @media screen and (max-width: 350px) {
     .Body-text{
         font-size: small;
+        font-family: "ProzaDisplay";
+
     }
     .Mind-text{
         font-size: small;
+        font-family: "ProzaDisplay";
+
     }
     .Transform-text{
         font-size: small;
         color: #0066CC;
+        font-family: "RageItalic";
+
     }
     .Shine-text{
         font-size: small;
+        font-family: "ProzaDisplay";
+
     }
         .B-Operatd-img{
             width: 120px;
@@ -188,7 +225,7 @@ margin-top: 70px;
             align-items: center;
             margin-top: 50px;
             font-size: x-small;
-            margin-left: 30px;
+            margin-left: 10px;
           }
         .Gets-button{
             background-color: #0066CC;
@@ -200,7 +237,7 @@ margin-top: 70px;
             border-radius: 5px;
             margin-top: 15px;
             margin-bottom: 20px;
-            margin-left: 30px;
+            /* margin-left: 0px; */
           }
     }
 
