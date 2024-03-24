@@ -73,14 +73,14 @@ const ProductComp = () => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth <= 550);
     };
-console.log(window.innerWidth,"Sws");
+
     handleResize(); // Check initial screen width
     window.addEventListener("resize", handleResize); // Listen for window resize events
 
     return () => {
       window.removeEventListener("resize", handleResize); // Remove event listener on component unmount
     };
-  }, [window.innerWidth]);
+  }, []);
 
   return (
     <div className="product-container">
