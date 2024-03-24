@@ -27,6 +27,7 @@
 }
 .subscribe h1 {
   padding: 15px;
+
   font-family: "ProzaDisplay";
 }
 
@@ -135,20 +136,39 @@
     flex-direction: column;
     justify-content: center;
   }
+  .subscribe h1 {
+width: 353px;  
+    font-family: "ProzaDisplay";
+  }
+  .L-Para{
+    width: 353px;  
+margin-top: -26px;
+    font-size: 15px;
+
+  }
   .subscribe button {
     right: 0px;
     top: -65px;
     left: 300px;
 }
+
+
+
+
+
 }
 
 @media screen and (max-width:400px){
   .subscribe {
     margin-left: 40px;
   }
+  .subscribe input {
+width: 258px;
+  }
   .subscribe button {
+
     right: 0px;
-    top: -65px;
+    top: -62px;
     left: 250px;
 }
 }

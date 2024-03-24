@@ -80,7 +80,7 @@ font-size: 48px;
 @media screen and (max-width:450px){
     
     .video{
-        width:450px;
+        width:496px;
         height:400px;
         background-repeat: no-repeat;
         background-size:cover;

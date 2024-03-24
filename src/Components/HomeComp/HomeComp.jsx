@@ -10,8 +10,9 @@ export default function HomeComp() {
   <>
   < div className='main'>
  <div className='home'>
-  <TextAnimationcomp/><br/>
- <h1> <br /> from  inside-out</h1>
+  <TextAnimationcomp/>
+  <br />  <br />
+ <h1 className='ms-2 '> from  inside-out</h1>
   <GetStartComp/>
  </div>
  <div className='home-pic'> 

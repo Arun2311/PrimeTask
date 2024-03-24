@@ -81,6 +81,10 @@
 }
 
 @media screen and (max-width: 450px) {
+
+  .namebig{
+    font-size: 40px;
+  }
   .box {
     display: flex;
     justify-content: space-evenly;
@@ -95,9 +99,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; 
+    width: 135%;
     height: 250px; 
   
+  }
+  .namebig{
+    font-size: 60px;
+    margin-bottom: -10px;
+    margin-left: 73px;
+    /* text-align: center; */
   }
 
   .description {
@@ -107,7 +117,7 @@
     text-align: left;
     align-items: center;
     padding: 60px 10px; 
-    width: 100%;
+    width: 135%;
   
   }
 }

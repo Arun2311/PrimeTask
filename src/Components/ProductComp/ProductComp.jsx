@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import avacado from "../../assets/avacado.png";
 import pear from "../../assets/pear.png";
 import cherry from "../../assets/cherry1.png";
@@ -47,7 +47,7 @@ const ProductComp = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveProductIndex((prevIndex) => (prevIndex + 1) % products.length);
-    }, 3000); // Switch product every 3 seconds
+    }, 1000); // Switch product every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -67,33 +67,91 @@ const ProductComp = () => {
   const handleMouseLeave = () => {
     setShowDescription(false);
   };
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 550);
+    };
+console.log(window.innerWidth,"Sws");
+    handleResize(); // Check initial screen width
+    window.addEventListener("resize", handleResize); // Listen for window resize events
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Remove event listener on component unmount
+    };
+  }, [window.innerWidth]);
 
   return (
     <div className="product-container">
-      <div className="box" onClick={() => handleMouseEnter(activeProductIndex)} onMouseLeave={handleMouseLeave}>
-        <div
-          className="fruit"
-          style={{ background: products[activeProductIndex].background }}
-        >
-          <img
-            src={products[activeProductIndex].imageUrl}
-            alt={`Product ${products[activeProductIndex].id}`}
-            style={{ maxWidth: "80%", maxHeight: "50%" }}
-          />
-        </div>
-        <div
-          className={`description ${showDescription ? "show" : ""}`}
-          style={{ background: products[activeProductIndex].content }}
-        >
-          <h1>
-            0{products[activeProductIndex].id}
-            <br />
-            <span style={{ color: products[activeProductIndex].background }}>
-              {products[activeProductIndex].title}
-            </span>
-            <p>{products[activeProductIndex].para}</p>
-          </h1>
-        </div>
+      <div
+        className="box"
+        onClick={() => handleMouseEnter(activeProductIndex)}
+        onMouseLeave={handleMouseLeave}
+      >
+        {isMobileView ? (
+          <>
+            {/* Description div first */}
+            <div
+              className={`description ${showDescription ? "show" : ""}`}
+              style={{ background: products[activeProductIndex].content }}
+            >
+              <h1 >
+                <div className="namebig">
+                0{products[activeProductIndex].id}
+                </div>
+                <br />
+                <span
+                  style={{ color: products[activeProductIndex].background }}
+                >
+                  {products[activeProductIndex].title}
+                </span>
+                <p>{products[activeProductIndex].para}</p>
+              </h1>
+            </div>
+
+            {/* Fruit div second */}
+            <div
+              className="fruit"
+              style={{ background: products[activeProductIndex].background }}
+            >
+              <img
+                src={products[activeProductIndex].imageUrl}
+                alt={`Product ${products[activeProductIndex].id}`}
+                style={{ maxWidth: "80%", maxHeight: "50%" }}
+              />
+            </div>
+          </>
+        ) : (
+          <>
+            <div
+              className="fruit"
+              style={{ background: products[activeProductIndex].background }}
+            >
+              <img
+                src={products[activeProductIndex].imageUrl}
+                alt={`Product ${products[activeProductIndex].id}`}
+                style={{ maxWidth: "80%", maxHeight: "50%" }}
+              />
+            </div>
+
+            <div
+              className={`description ${showDescription ? "show" : ""}`}
+              style={{ background: products[activeProductIndex].content }}
+            >
+              <h1>
+                0{products[activeProductIndex].id}
+                <br />
+                <span
+                  style={{ color: products[activeProductIndex].background }}
+                >
+                  {products[activeProductIndex].title}
+                </span>
+                <p>{products[activeProductIndex].para}</p>
+              </h1>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
