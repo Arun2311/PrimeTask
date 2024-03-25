@@ -26,7 +26,7 @@ const Contactuscomp = () => {
   };
 
   return (
-    <div>
+    <div className="Total-page-B">
       <div className="Total-contpg">
         <div className="left-B-column">
           <h2 className="have-question">
