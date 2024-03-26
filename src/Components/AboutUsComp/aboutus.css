@@ -291,8 +291,14 @@ margin-top: 70px;
 
         .Aboutus-total-page{
             width: 450px;
+            margin-left: 22px;
         }
     
         }
 
         
+        @media screen and (max-width: 350px) {
+            .Gets-button{
+                margin-right: 120px;
+            }
+        }

@@ -168,7 +168,15 @@
     }
   
   }
-  
+  @media screen and (max-width: 450px) {
+    .B-Float-img {
+      width: 100%;
+      overflow: hidden;
+      display: none;
+      margin-left: 29px; 
+    }
+
+  }
 
     
 @media screen and (max-width: 400px) {
@@ -183,6 +191,12 @@
     width: 35%;
     padding-right: 7px;
   }
+  .B-Float-img {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+    margin-left: 55px; 
+  }
   
   .B-images-contain {
     width: 45%;
@@ -190,11 +204,6 @@
     justify-content: center;
   }
   
-  .B-Float-img {
-    width: 100%;
-    overflow: hidden;
-    display: none; 
-  }
   
   .B-First-img {
     height: 150px;
