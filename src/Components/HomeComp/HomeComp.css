@@ -229,7 +229,6 @@ margin-left:100px;
     margin-top: -100px;
     padding-left: 10px;
     padding: 0px 10px;
-    /* padding-left: 20px; */
   }
   .home h1 {
     font-size: 40px;
@@ -239,8 +238,12 @@ margin-left:100px;
   }
   .home-pic img {
     align-items: flex-end;
-    width: 440px;
-margin-left:100px;
+    width: 300px;
+    height: 400px;
+margin-left:130px;
+  }
+  .home-pic{
+    width: 540px;
   }
   .hello p{
     width: 65%;

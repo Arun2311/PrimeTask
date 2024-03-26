@@ -149,9 +149,11 @@ body {
 
 @media screen and (max-width: 450px) {
   .content-body {
+    
       height: 450px;
-      width: 450px;
+      width: 500px;
       margin-top: -40%;
+      padding-top: 4rem;
     }
   }
 

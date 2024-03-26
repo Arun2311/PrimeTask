@@ -41,13 +41,14 @@
   .toggle-icon {
    position: relative;
  top: -15px;
+ right: -220px;
   }
   
   .menuOptions {
     top: 50px;
     right: 0px;
-    left: -40px;
-    width: 450px;
+    left: -425px;
+    width: 495px;
     height: 100vh;
     opacity: 0.9; /* Adjust transparency here */
     background: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
@@ -57,7 +58,6 @@
     z-index: 1000;
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
   }
   
   .menuOptions ul {
@@ -82,12 +82,13 @@
 }
 
 @media screen and (max-width:350px) {
-
+.toggle-icon{
+ top: -30px;
+}
    .menuOptions {
      top: 50px;
-     right: 0px;
-left: -13px;
-     height: 100vh;
+ width: 508px;
+     height: 120vh;
      opacity: 0.9; /* Adjust transparency here */
      background: black; /* White with 70% opacity */
      font-size: 20px;
@@ -97,7 +98,7 @@ left: -13px;
      /* rgba(255, 255, 255, 0.7) */
      display: flex;
      justify-content: center;
-     padding-top: 4rem;
+     padding-top: 2rem;
    }
   
 

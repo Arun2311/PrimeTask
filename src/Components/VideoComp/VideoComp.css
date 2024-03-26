@@ -83,6 +83,7 @@ font-size: 48px;
         width:496px;
         height:400px;
         background-repeat: no-repeat;
+        background-image: url("../../assets/videoComp2.png");
         background-size:cover;
         background-position: center;
     }
@@ -95,3 +96,7 @@ font-size: 48px;
         font-weight: 10;
     } 
 }
+
+
+
+

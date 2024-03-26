@@ -134,25 +134,11 @@
 
   .logo img {
     height: 70px;
-    width: 100px;
+    width: 150px;
   }
 
   .signin-btn button {
-    left: 80px;
-  }
-  .nav button {
-    margin-left: 150px;
-    margin-top: 3rem;
-    bottom: 120px;
-  }
-
-  .nav button img {
-    height: 25px;
-    width: 25px;
-    margin-top: 7px;
-    margin-left: 4px;
-    text-align: center;
-    font-weight: bold;
+    display: none;
   }
   .toggle{
     margin-top: 2rem;
@@ -173,28 +159,11 @@
   }
 
   .logo img {
-    height: 80px;
-    width: 100px;
-  }
-
-  .signin-btn button {
-    left: 100px;
-  }
-  .nav button {
-    margin-left: 150px;
-    margin-top: 0rem;
-    bottom: 70px;
+    height: 70px;
+    width: 120px;
   }
 
 
-  .nav button img {
-    height: 25px;
-    width: 25px;
-    margin-top: 7px;
-    margin-left: 4px;
-    text-align: center;
-    font-weight: bold;
-  }
   .toggle{
     margin-top: 3rem;
   }
