@@ -27,6 +27,20 @@
     transform: translateY(0); /* End position */
   }
 }
+
+@keyframes slideInimg {
+  0% {
+    bottom: 0; /* Start position */
+    opacity: 0; /* Start opacity */
+    
+  }
+
+  100% {
+    bottom: 0; /* End position */
+    opacity: 1; /* End opacity */
+    /* transform: translateY(0); */
+  }
+}
 .box {
   display: flex;
   justify-content: space-evenly;
@@ -53,7 +67,7 @@
   position: absolute; /* Add absolute positioning */
   bottom: -100%; /* Initially position the image below the container */
   opacity: 0; 
-  animation: zoomIn 2s ease forwards; /* Apply the zoom-in animation */
+  animation: slideInimg 2s ease forwards; /* Apply a different animation */
   /* Transition for smooth animation */
 }
 
@@ -64,13 +78,15 @@
   text-align: left;
   align-items: center;
   padding: 156px 10px;
-  transition: background-color 2s ease, color 2s ease, transform 2s ease; /* Transition for smooth animation */
+  transition: background-color 2s ease, color 2s ease, transform 2s ease;
+   /* Transition for smooth animation */
 }
 
 .description h1 {
   padding: 10px; /* Adjust padding as needed */
   text-align: left;
-   animation: slideIn 2s ease forwards; /* Apply a different animation */
+   animation: slideIn 2s ease forwards; 
+   /* Apply a different animation */
 
 }
 
