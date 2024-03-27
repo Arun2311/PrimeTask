@@ -43,7 +43,9 @@ const products = [
 const ProductComp = () => {
   const [activeProductIndex, setActiveProductIndex] = useState(0);
   const [showDescription, setShowDescription] = useState(false);
-  const [showImages, setShowImages] = useState(Array(products.length).fill(false));
+  const [showImages, setShowImages] = useState(
+    Array(products.length).fill(false)
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -87,84 +89,85 @@ const ProductComp = () => {
     const timeout = setTimeout(() => {
       setShowImages(showImages.map((_, index) => index === activeProductIndex));
     }, 2000); // Adjust the delay as needed
-  
+
     return () => clearTimeout(timeout);
   }, [activeProductIndex]);
 
   return (
     <div className="product-container">
-  <div
-    className="box"
-    onClick={() => handleMouseEnter(activeProductIndex)}
-    onMouseLeave={handleMouseLeave}
-  >
-    {isMobileView ? (
-      <>
-        {/* Description div first */}
-        <div
-          className={`description ${showDescription ? "show" : ""}`}
-          style={{ background: products[activeProductIndex].content }}
-        >
-          <h1 className={`heading ${showDescription ? "show" : ""}`}>
-            0{products[activeProductIndex].id}
-            <br />
-            <span style={{ color: products[activeProductIndex].background }}>
-              {products[activeProductIndex].title}
-            </span>
-            <p>{products[activeProductIndex].para}</p>
-          </h1>
-        </div>
+      <div
+        className="box"
+        onClick={() => handleMouseEnter(activeProductIndex)}
+        onMouseLeave={handleMouseLeave}
+      >
+        {isMobileView ? (
+          <>
+            {/* Description div first */}
+            <div
+              className={`description ${showDescription ? "show" : ""}`}
+              style={{ background: products[activeProductIndex].content }}
+            >
+              <h1 className={`heading ${showDescription ? "show" : ""}`}>
+                0{products[activeProductIndex].id}
+                <br />
+                <span
+                  style={{ color: products[activeProductIndex].background }}
+                >
+                  {products[activeProductIndex].title}
+                </span>
+                <p>{products[activeProductIndex].para}</p>
+              </h1>
+            </div>
 
-        {/* Fruit div second */}
-        <div
-          className="fruit"
-          style={{ background: products[activeProductIndex].background }}
-        >
-          <img
-            src={products[activeProductIndex].imageUrl}
-            alt={`Product ${products[activeProductIndex].id}`}
-            style={{ maxWidth: "80%", maxHeight: "50%" }}
-          />
-        </div>
-      </>
-    ) : (
-      <>
-        <div
-          className="fruit"
-          style={{ background: products[activeProductIndex].background }}
-        >
-          <img
-            key={products[activeProductIndex].id} // Use unique key for each image
-            src={products[activeProductIndex].imageUrl}
-            alt={`Product ${products[activeProductIndex].id}`}
-            className={showImages[activeProductIndex] ? 'show' : ''}
-            style={{ maxWidth: '80%', maxHeight: '80%' }}
-          />
-        </div>
+            {/* Fruit div second */}
+            <div
+              className="fruit"
+              style={{ background: products[activeProductIndex].background }}
+            >
+              <img
+                src={products[activeProductIndex].imageUrl}
+                alt={`Product ${products[activeProductIndex].id}`}
+                style={{ maxWidth: "80%", maxHeight: "50%" }}
+              />
+            </div>
+          </>
+        ) : (
+          <>
+            <div
+              className="fruit"
+              style={{ background: products[activeProductIndex].background }}
+            >
+              <img
+                key={products[activeProductIndex].id} // Use unique key for each image
+                src={products[activeProductIndex].imageUrl}
+                alt={`Product ${products[activeProductIndex].id}`}
+                className={showImages[activeProductIndex] ? "show" : ""}
+                style={{ maxWidth: "80%", maxHeight: "80%" }}
+              />
+            </div>
 
-        <div
-          className={`description ${showDescription ? "show" : ""}`}
-          style={{ background: products[activeProductIndex].content }}
-        >
-          <h1         key={products[activeProductIndex].id} 
- className={`heading ${showDescription ? "show" : ""}`}>
-            0{products[activeProductIndex].id}
-            <br />
-            <span style={{ color: products[activeProductIndex].background }}>
-              {products[activeProductIndex].title}
-            </span>
-            <p>{products[activeProductIndex].para}</p>
-          </h1>
-        </div>
-
-
-        
-      </>
-    )}
-  </div>
-</div>
-
-  
+            <div
+              className={`description ${showDescription ? "show" : ""}`}
+              style={{ background: products[activeProductIndex].content }}
+            >
+              <h1
+                key={products[activeProductIndex].id}
+                className={`heading ${showDescription ? "show" : ""}`}
+              >
+                0{products[activeProductIndex].id}
+                <br />
+                <span
+                  style={{ color: products[activeProductIndex].background }}
+                >
+                  {products[activeProductIndex].title}
+                </span>
+                <p>{products[activeProductIndex].para}</p>
+              </h1>
+            </div>
+          </>
+        )}
+      </div>
+    </div>
   );
 };
 
